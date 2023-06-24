@@ -100,3 +100,28 @@ a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#section_two{
+    width: 70%;
+}
+
+#section_two .box1{
+    width: 48%;
+    height: 200px;
+}
+
+#section_two .box2{
+    width: 48%;
+    height: 200px;
+}
+
+#section_two .box1 .part-3 div{
+    width: 33%;
+}
+#section_two .box1 .part-2 div:first-child{
+    width: 33%;
+}
+#section_two .box1 .part-2 div:last-child {
+    width: 65%;
+}
+

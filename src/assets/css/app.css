@@ -98,4 +98,5 @@ a {
     background-image: url(../images/bg-index-section-one.jpg);
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }

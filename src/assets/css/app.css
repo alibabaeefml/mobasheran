@@ -116,12 +116,12 @@ a {
 
 #section_two .box1{
     width: 48%;
-    height: 213px;
+    height: 200px;
 }
 
 #section_two .box2{
     width: 48%;
-    height: 210px;
+    height: 197px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -170,4 +170,95 @@ a {
     color: var(--secondary);
     font-weight: bold;
     margin-top: 16px;
+}
+
+#section3 .asatid{
+    width: 105px;
+    height: 105px;
+    border: 2px solid rgba(33, 32, 32, 0.754);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#section3 .asatid img{
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+}
+
+#section3 > div{
+    width: 55%;
+    text-align: center;
+}
+
+#section3>div h5{
+    margin: 20px 0;
+    font-size: 19px;
+}
+
+#section3>div h6 {
+    font-size: 14px;
+    padding: 8px 0;
+    width: 100px;
+    color: white;
+    background-color: var(--secondary-1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+#section3 .title{
+    margin: 20px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background-color: var(--primary);
+    height: 65px;
+
+}
+
+#section3 .title h4{
+    padding-top: 3px;
+    font-weight: bold;
+}
+#section3 .category{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#section3 .category div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#section3 .category div> img {
+    width: 110px;
+    height: 130px;
+}
+
+#section3 .category div>.img {
+    width: 125px;
+    height: 130px;
+}
+
+#section3 .category div .dot {
+    width: 18px;
+    height: 18px;
+    margin:5px auto;
+}
+
+#section3 .category div .dot-start {
+    width: 18px;
+    height: 18px;
+    margin-right: 50%;
 }

@@ -70,8 +70,8 @@
     <!-- sidebar -->
     <section id="sidebar" class="w-100 h-100 fixed-top " style="right: -100%;">
 
-        <div class="w-50 bg-primary border-end border-3 border-secondary-1
-         menu-container h-100 position-relative">
+        <div class="w-50 bg-primary border-end border-3 border-secondary-1 
+        menu-container h-100 position-relative">
             <button id="close_sidebar_btn" class="btn btn-secondary p-0 position-absolute end-0 m-3 fs-3"
                 style="width:30px;height: 30px;">
                 <i class="bi-x"></i>
@@ -123,48 +123,70 @@
         </div>
     </section>
     <!-- wrapper -->
-    <section id="wrapper" class="w-100 h-100">
+    <main id="wrapper" class="w-100 h-100">
         <section id="section_one" class="mx-auto w-[80%] h-[55%]">
             <!-- slider section one -->
-            <div>
-                <swiper-container class="w-75" loop="true" slides-per-view="1">
+            <div id="container" class="rounded-4 mt-4 mb-2">
+                <swiper-container loop="true" slides-per-view="1">
                     <swiper-slide>Slide 1</swiper-slide>
                     <swiper-slide>Slide 2</swiper-slide>
                     <swiper-slide>Slide 3</swiper-slide>
                 </swiper-container>
             </div>
+
+                    <section id="section_two" class="mx-auto">
+                        <div>
+                            <div class="w-100 d-flex justify-content-between">
+                    
+                                <div class="box1 d-flex flex-column m-1">
+                    
+                                    <div class="part-2 h-50 d-flex justify-content-evenly gap-2">
+                                        <div class="bg-secondary-1 rounded-4">
+                                            <img src="/src/assets/images/coursesGreen.png" alt="">
+                                            <h5>دوره ها</h5>
+                                        </div>
+                                        <div class="bg-secondary-1 rounded-4">
+                                            <img src="/src/assets/images/vije.png" alt="">
+                                            <h5>دروس ویژه</h5>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="part-3 h-50 d-flex justify-content-between gap-1 my-1">
+                                        <div class="bg-secondary-1 rounded-4">
+                                            <img src="/src/assets/images/lessonsGreen.png" alt="">
+                                            <h5>دروس</h5>
+                                        </div>
+                                        <div class="bg-secondary-1 rounded-4">
+                                            <img src="/src/assets/images/poyesh.png" alt="">
+                                            <h5>پویش</h5>
+                                        </div>
+                                        <div class="bg-secondary-1 rounded-4">
+                                            <img src="/src/assets/images/vebinar.png" alt="">
+                                            <h5>وبینار</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="box2 mt-1 bg-primary rounded-4">
+                                    <div class="w-100 d-flex justify-content-evenly mt-2">
+                                        <div>
+                                            <img class="img1Box2" src="/src/assets/images/institutesGreen.png" alt="">
+                                            <h5>ثبت موسسه</h5>
+                                        </div>
+                                        <div>
+                                            <img class="img2Box2" src="/src/assets/images/atlasGreen.png" alt="">
+                                            <h5>اطلس آموزش</h5>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
         </section>   
 
-        <section id="section_two" class="mx-auto">
-            <div >
-                <div class="w-100 d-flex justify-content-between">
 
-                    <div class="box1 d-flex flex-column m-1">
-
-                        <div class="part-2 h-50 d-flex justify-content-evenly gap-2">
-                            <div class="bg-secondary-1 rounded-4">..</div>
-                            <div class="bg-secondary-1 rounded-4">..</div>
-                        </div>
-
-                        <div class="part-3 h-50 d-flex justify-content-between gap-1 my-1">
-                            <div class="bg-secondary-1 rounded-4">.</div>
-                            <div class="bg-secondary-1 rounded-4">.</div>
-                            <div class="bg-secondary-1 rounded-4">.</div>
-                        </div>
-                    </div>
-
-                    <div class="box2 bg-primary rounded-4">
-                        <div class="h-100 my-auto">
-                        <div class=" d-flex justify-content-evenly">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+    </main>
 
     <footer data-aos="fade-down" data-aos-offset="0"
         class="container-xxl bg-secondary w-100 text-white d-flex flex-column align-items-center fade-in">

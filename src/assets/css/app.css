@@ -47,6 +47,7 @@ body {
     font-weight: 900;
     font-size: 16px;
     overflow-x: hidden;
+    position: relative;
 }
 
 ul {
@@ -64,6 +65,9 @@ a {
 }
 
 #header {
+    position: fixed;
+    z-index: 30;
+    padding: 20px;
     height: 100px;
     background-image: url(../images/header-pattern.png);
     background-size: contain;
@@ -75,16 +79,28 @@ a {
     }
 }
 
+#background{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../images/bg-index-section-one.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #container{
-    border: 2px #002e4a solid;
     width: 65%;
     margin: auto;
 
 }
 
-/* #sidebar{
+#sidebar{
     transition: .3s;
-} */
+}
 
 #sidebar.active {
     background-color: rgba(255, 255, 255, .5);
@@ -102,10 +118,7 @@ a {
 }
 
 #section_one{
-    background-image: url(../images/bg-index-section-one.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-top: 100px;
 }
 
 #section_one .swiper-img img{
@@ -170,14 +183,24 @@ a {
 
 }
 
+@media (max-width:900px) {
+    #container {
+        width: 80%;
+    }
+
+    #section_two {
+        width: 80%;
+    }
+}
+
 @media (max-width:576px) {
     #container {
-            width: 80%;
-        }
+        width: 90%;
+    }
     
-        #section_two {
-            width: 80%;
-        }
+    #section_two {
+        width: 90%;
+    }
     
     #section_two .box1 {
         padding: 0 !important;
@@ -260,37 +283,140 @@ a {
     padding-top: 3px;
     font-weight: bold;
 }
-#section3 .category{
+.category{
     margin: auto;
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 
-#section3 .category div{
+.category div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
-#section3 .category div>a img {
+.category div>a img {
     width: 110px;
     height: 130px;
 }
 
-#section3 .category div>a .img {
+.category div>a .img {
     width: 125px;
     height: 130px;
 }
 
-#section3 .category div .dot {
+.category div .dot {
     width: 18px;
     height: 18px;
     margin:5px auto;
 }
 
-#section3 .category div .dot-start {
+.category div .dot-start {
     width: 18px;
     height: 18px;
     margin-right: 50%;
+}
+
+.page3 #imgSlide{
+    width: 100%;
+    height: 45vh;
+    background-image: url(/src/assets/images/bg-page3.png);
+}
+
+.page3 #imgSlide img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+@media (max-width:576px) {
+
+    .page3 #imgSlide {
+            height: 26vh;
+        }
+    .page3 #imgSlide img {
+            width: 90%;
+            height: 75%;
+        }
+}
+
+.page3 #btnUsers {
+    width: 45%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:1000px) {
+    .page3 #btnUsers {
+        width: 65%;
+    }
+}
+
+.page3 #btnUsers h6{
+    margin: 0;
+}
+
+.page3 #btnUsers button {
+    padding: 2px 16px;
+}
+
+.page3 #userContain{
+    width: 60%;
+    margin:20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.page3 #userContain .users{
+    border:2px solid var(--secondary);
+    text-align: center;
+    overflow: hidden;
+}
+
+.page3 #userContain .users img{
+    width: 100%;
+    height: 115px;
+    border-bottom: 1px solid rgba(68, 67, 67, 0.761);
+    
+}
+.page3 #userContain .users div{
+    margin: 9px 15px 20px 15px;
+
+}
+.page3 #userContain .users div h5{
+    margin: 0;
+    font-size: 1rem;
+    color: var(--secondary-1);
+    font-weight: bold;
+}
+.page3 #userContain .users div h6 {
+    font-size: 14px;
+
+}
+
+#page4 .title {
+    margin: 20px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background-color: #fff0d1;
+    height: 70px;
+    width: 100%;
+
+}
+
+#page4 .title h5 {
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+#page4 .archive{
+    width: 85%;
+    margin: auto;
 }

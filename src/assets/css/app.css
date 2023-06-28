@@ -48,6 +48,7 @@ body {
     font-size: 16px;
     overflow-x: hidden;
     position: relative;
+    text-align: justify;
 }
 
 ul {
@@ -130,7 +131,6 @@ a {
 
 #section_two{
     width: 65%;
-    
 }
 
 #section_two .box1>div.row{
@@ -142,10 +142,6 @@ a {
 
 #section_two .box2{
     height: 208px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 
 #section_two .box2 .img1Box2 {
@@ -177,11 +173,6 @@ a {
     margin-top: 16px;
 }
 
-#section_two .box1 {
-    text-align: center;
-    padding-right: 0;
-
-}
 
 @media (max-width:900px) {
     #container {
@@ -254,7 +245,7 @@ a {
     font-size: 19px;
 }
 
-#section3>div h6 {
+#section3>div a h6 {
     font-size: 14px;
     padding: 8px 0;
     width: 100px;
@@ -270,23 +261,8 @@ a {
 
 #section3 .title{
     margin: 20px 0 60px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--secondary);
-    background-color: var(--primary);
     height: 65px;
-
-}
-
-#section3 .title h4{
-    padding-top: 3px;
-    font-weight: bold;
-}
-.category{
-    margin: auto;
-    width: 100%;
-    text-align: center;
 }
 
 .category div{
@@ -330,7 +306,6 @@ a {
 }
 
 @media (max-width:576px) {
-
     .page3 #imgSlide {
             height: 26vh;
         }
@@ -341,7 +316,7 @@ a {
 }
 
 .page3 #btnUsers {
-    width: 45%;
+    width: 46%;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
@@ -351,7 +326,7 @@ a {
 
 @media (max-width:1000px) {
     .page3 #btnUsers {
-        width: 65%;
+        width:70%;
     }
 }
 
@@ -364,10 +339,10 @@ a {
 }
 
 .page3 #userContain{
-    width: 60%;
+    width: 80%;
     margin:20px auto;
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap;
     justify-content: center;
     gap: 5px;
 }
@@ -419,4 +394,90 @@ a {
 #page4 .archive{
     width: 85%;
     margin: auto;
+}
+
+#page4 .archive div{
+    width: 220px;
+    height: 350px;
+}
+#page4 .archive div div {
+    color: var(--secondary-1);
+    margin:auto;
+    margin-top: var(--bs-gutter-y);
+}
+
+#page4 .archive img.logo{
+    width: 60px;
+    height: 60px;
+    margin:20px auto 10px auto;
+
+}
+
+#page4 .archive h5{
+    font-weight: bold;
+}
+
+#page4 .archive p {
+    padding: 5px 15px;
+    height: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    color: var(--secondary);
+}
+
+#page4 .archive a {
+    font-size: 14px;
+}
+
+#page4 .archive img.bg-site {
+    width: 190px;
+    margin:15px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+footer {
+    float: left;
+    width: 100%;
+}
+
+footer {
+    background-color: #ffe6b4;
+    padding: 40px 0 30px;
+    overflow: hidden;
+}
+
+footer> div{
+    width: 90%;
+    margin: auto;
+}
+
+footer .permissions-inner {
+    background-color: #f8d796;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo_wrap a img{
+    width: 60px;
+}
+
+.copyRight-wrap{
+    width: 84%;
+    margin: auto;
+}
+
+.cards_wrap li{
+    border: 1px solid var(--secondary);
+    padding: 1px 6px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
 }

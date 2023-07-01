@@ -1,0 +1,72 @@
+@font-face {
+    font-family: farhang;
+    src: url(../fonts/farhang.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: farhang;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body> div  img{
+    width: 600px;
+    bottom: -47%;
+    left: -14%;
+}
+@media (max-width:1000px) {
+    body>div img {
+        left: -18%;
+    }
+}
+
+.containers{
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(249, 249, 249) 0%, #fdffb6 81.3%);
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    text-align: right;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius:100px ;
+    border: 1px solid #fdffb6;
+}
+
+.containers div{
+    padding: 3% 0;
+}
+.link img{
+    width: 30px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #00b599;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.img-login{
+    width: 250px;
+}
+
+input{
+    width: 260px;
+    height: 42px;
+    border: 1px #d7d4d44f solid;
+    border-radius: 13px;
+}
+p{
+    margin: 2px 0;
+    font-weight: bold;
+    color: #535252;
+}
+

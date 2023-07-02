@@ -12,7 +12,7 @@ body,
 html{
     font-family: farhang;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body> div  img{
@@ -27,7 +27,7 @@ body> div  img{
 }
 
 .containers{
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(249, 249, 249) 0%, #fdffb6 81.3%);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(249, 249, 249) 0%, #ffecc7 81.3%);
     width: 68%;
     display: flex;
     flex-direction: row;
@@ -36,11 +36,12 @@ body> div  img{
     text-align: right;
     border-bottom-right-radius: 100px;
     border-top-left-radius:100px ;
-    border: 1px solid #fdffb6;
+    border: 1px solid #ffecc7;
 }
 
 .containers div{
     padding: 3% 0;
+    z-index: 20;
 }
 .link img{
     width: 30px;
@@ -70,3 +71,17 @@ p{
     color: #535252;
 }
 
+@media (max-width:576px) {
+    .containers{
+        width: 84%;
+    }
+    .containers div{
+        margin: auto;
+    }
+    body>div>img{
+        display: none;
+    }
+    .img-login {
+        width: 200px;
+    }
+}

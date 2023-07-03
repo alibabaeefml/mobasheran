@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: auto;
 }
 
 @media (max-width: 1000px) {
@@ -59,9 +60,6 @@
   }
   .containers div {
     margin: auto;
-  }
-  body > div > img {
-    display: none;
   }
   .img-login {
     width: 200px;

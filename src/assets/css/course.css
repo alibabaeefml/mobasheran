@@ -6,7 +6,8 @@
 .section1-course{
     height: 14vh;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #fff7e7;
+    border-bottom:1px solid #bfbeb879;
 }
 
 .section1-course .part1{
@@ -33,7 +34,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%;
+    width: 70%;
 }
 
 .section1-course .part2 input{
@@ -93,7 +94,7 @@
 .section2-course div .score{
     margin: 12px 54px;
     text-align: right;
-    width: 45%;
+    width: 60%;
 }
 
 .teaser .img-ostad>img{
@@ -101,13 +102,28 @@
     height: 55px;
 }
 .content-teaser img{
-    width: 400px;
-    height: 230px;
+    width: 390px;
+    height: 240px;
 }
 
-.part1-col2 {
-    border-bottom: 2px solid #ffc148;
-    padding-bottom: 2px;
+.content-teaser .play-teaser{
+    width: 100px;
+    margin: auto;
+    top:35%;
+    left: 45%;
+
+}
+
+.content-teaser .play-teaser h5{
+    margin:8px auto ;
+    font-size: 16px;
+    color: white;
+}
+
+.content-teaser .play-teaser img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
 }
 
 .part1-col2 div .img-1-part1{
@@ -123,12 +139,15 @@
     object-fit: cover;
 
 }
-.part1-col2 button {
-padding: 0 20px;
-margin: 8px 0;}
+.part1-col2 div div h6{
+    color: #bfbeb8;
+    font-weight: bold;
+    margin: auto;
+}
 
-.part2-col2{
-    border-bottom:2px solid #ffc148 ;
+.part1-col2 button {
+    padding: 0 20px;
+    margin: 8px 0;
 }
 
 .part2-col2 img{
@@ -140,4 +159,52 @@ margin: 8px 0;}
 .part2-col2 .title-img-p2c2{
     font-size: 12px;
     margin: auto;
+}
+
+.border-col-2{
+    border-bottom: 2px solid #ffc148;
+    padding-bottom: 2px;
+}
+
+.rate input[type="radio"] {
+    opacity: 0;
+}
+
+.rate input[type="radio"] {
+    cursor: pointer;
+}
+
+.rate label:before {
+    content: '★ ';
+    margin: -16px;
+    font-size: 18px;
+    color: #bfbeb8;
+}
+
+.rate input[type="radio"]:checked~label::before {
+    color: #ffc148;
+}
+
+.rate input[type="radio"]:hover~label::before {
+    color: gold;
+}
+
+.part-end-course{
+    width: 80%;
+    margin: auto;
+    color: rgb(132, 140, 140);
+}
+
+.part-end-course div{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.part-end-course div:nth-child(odd){
+    border-bottom:1px solid rgb(132, 140, 140);
+}
+
+.part-end-course div:nth-child(even) {
+    border-bottom: 1px solid #ffc148;
 }

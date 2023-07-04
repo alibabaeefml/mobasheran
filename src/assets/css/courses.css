@@ -1,0 +1,27 @@
+
+.section2-course .score{
+    color: #bfbdb7;
+}
+
+.section2-course div .title-course::after {
+    content: " ";
+    border-bottom: 1px solid #bfbdb7;
+    border-right: 1px solid #bfbdb7;
+}
+
+.asatid-courses{
+    border-bottom: 2px solid #ffc148;
+    border-top: 2px solid #ffc148;
+}
+.asatid-courses img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.asatid-courses h6{
+    font-size: 11px;
+    margin: auto;
+    color: #bfbdb7;
+    font-weight: bold;
+}

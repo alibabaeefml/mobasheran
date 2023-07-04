@@ -3,7 +3,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +42,7 @@
   height: 75px;
   position:absolute;
   top: -40px;
-  right: 8%;
+  right: 11%;
 }
 
 .logo1 img{

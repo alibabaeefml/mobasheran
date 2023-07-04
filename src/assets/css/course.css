@@ -1,0 +1,143 @@
+
+.main{
+    margin-top: 100px;
+}
+
+.section1-course{
+    height: 14vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.section1-course .part1{
+    margin: 6px 4%;
+    width: 8%;
+}
+
+.section1-course .part1 img {
+    width: 45px;
+    height: 45px;
+    margin: 5px auto;
+
+}
+
+.section1-course .part1 h5 {
+    font-size: .9rem;
+    margin:1px auto;
+}
+
+.section1-course .part2 label{
+    color: #939699;
+}
+.section1-course .part2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.section1-course .part2 input{
+    width: 260px;
+}
+
+.section1-course .part2 select,
+.section1-course .part2 input{
+    background-color: rgb(198, 206, 206);
+    padding: 5px 10px;
+    border: rgba(21, 21, 21, 0.755) 1px solid;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 200px;
+}
+
+.section1-course .part2 select{
+    width: 140px;
+}
+
+.section1-course .part2 div div {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 4px 6px;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+.section1-course .part2 div div img {
+    width: 30px;
+    height: 28px;
+}
+
+.section2-course >div{
+    height: auto;
+    border:1px rgba(29, 29, 29, 0.85) solid;
+    border-radius: 5px;
+
+}
+
+.section2-course div .title-course img{
+    width: 40px;
+    height: 40px;
+}
+
+.section2-course div .title-course::after {
+    content: " ";
+    position: absolute;
+    right: 68px;
+    bottom: -25px;
+    width: 32px;
+    height: 23px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.section2-course div .score{
+    margin: 12px 54px;
+    text-align: right;
+    width: 45%;
+}
+
+.teaser .img-ostad>img{
+    width: 55px;
+    height: 55px;
+}
+.content-teaser img{
+    width: 400px;
+    height: 230px;
+}
+
+.part1-col2 {
+    border-bottom: 2px solid #ffc148;
+    padding-bottom: 2px;
+}
+
+.part1-col2 div .img-1-part1{
+    width: 55px;
+    height: 55px;
+    padding-bottom: 5px;
+
+}
+
+.part1-col2 div .img-2-part1 {
+    width: 52px;
+    height: 46px;;
+    object-fit: cover;
+
+}
+.part1-col2 button {
+padding: 0 20px;
+margin: 8px 0;}
+
+.part2-col2{
+    border-bottom:2px solid #ffc148 ;
+}
+
+.part2-col2 img{
+    height: 25px;
+    width: 60px;
+    margin: auto;
+}
+
+.part2-col2 .title-img-p2c2{
+    font-size: 12px;
+    margin: auto;
+}

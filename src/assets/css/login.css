@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   height: auto;
+  margin-top: 160px;
 }
 
 @media (max-width: 1000px) {
@@ -20,7 +21,7 @@
   background: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgb(249, 249, 249) 0%,
-    #ffecc7 81.3%
+    #fff1dc 81.3%
   );
   width: 68%;
   display: flex;
@@ -30,8 +31,28 @@
   text-align: right;
   border-bottom-right-radius: 100px;
   border-top-left-radius: 100px;
-  border: 1px solid #ffecc7;
+  border: 1px solid #fff1dc;
+  position: relative;
 }
+
+.logo1{
+  border-radius: 50%;
+  border: 2px white solid;
+  background-color:#fff1dc ;
+  width: 75px;
+  height: 75px;
+  position:absolute;
+  top: -40px;
+  right: 8%;
+}
+
+.logo1 img{
+  width: 65px;
+  padding: 1px 6px 1px 1px;
+
+}
+
+
 
 .containers div {
   padding: 3% 0;
@@ -63,5 +84,8 @@
   }
   .img-login {
     width: 200px;
+  }
+  .logo1 img{
+    padding: 15px 6px 1px 1px;
   }
 }

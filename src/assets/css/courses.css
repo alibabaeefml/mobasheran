@@ -25,3 +25,45 @@
     color: #bfbdb7;
     font-weight: bold;
 }
+
+.asatid-courses .asatid-text{
+    top:-15px;
+    padding: 0 3px;
+}
+
+.asatid-courses .courses-text {
+    bottom: -11px;
+    padding: 0 3px;
+}
+
+.banner{
+    width: 72px;
+    height: 68px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+
+
+}
+
+.banner img{
+    width: 72px;
+    height: 68px;
+
+}
+
+.title-banner {
+    margin-right: 10px;
+    color: #a4a3a0;
+}
+
+.title-banner h5{
+    font-size: 15px;
+}
+
+.title-banner h6,
+.title-banner p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+}

@@ -10,6 +10,7 @@
     border-bottom:1px solid #bfbeb879;
 }
 
+
 .section1-course .part1{
     margin: 6px 4%;
     width: 8%;
@@ -68,10 +69,42 @@
     height: 28px;
 }
 
+  @media (max-width: 576px) {
+      .section1-course {
+          height: auto;
+      }
+
+      .section1-course .part1 {
+          margin: 10px 15px;
+          width:20%;
+      }
+    
+          .section1-course .part1 img {
+              width: 40px;
+              height: 40px;
+              margin: 10px auto;
+    
+          }
+    
+          .section1-course .part1 h5 {
+              font-size: .8rem;
+              margin:1px auto ;
+            text-align: center;
+          }
+
+    .section1-course .part2 {
+        flex-direction: column;
+        width: auto;
+        margin: 20px auto;
+        gap: 20px;
+    }
+  }
+
 .section2-course >div{
     height: auto;
     border:1px rgba(29, 29, 29, 0.85) solid;
     border-radius: 5px;
+    width: 75%;
 
 }
 
@@ -92,9 +125,54 @@
 }
 
 .section2-course div .score{
-    margin: 12px 54px;
+    margin: 10px 54px;
     text-align: right;
     width: 60%;
+    font-size: 14px;
+}
+
+.rate input[type="radio"] {
+    opacity: 0;
+}
+
+.rate input[type="radio"] {
+    cursor: pointer;
+}
+
+.rate label:before {
+    content: '★ ';
+    margin: -16px;
+    font-size: 16px;
+    color: #bfbeb8;
+}
+
+.rate input[type="radio"]:checked~label::before {
+    color: #ffc148;
+}
+
+.rate input[type="radio"]:hover~label::before {
+    color: gold;
+}
+
+@media (max-width: 576px) {
+    .section2-course>div {
+        width: 88%;
+    }
+
+    .section2-course div .title-course img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .section2-course div .title-course h5 {
+        font-size: 18px;
+    }
+
+    .section2-course div .title-course::after {
+        content: " ";
+        right: 25px;
+        bottom: -22px;
+    }
 }
 
 .teaser .img-ostad>img{
@@ -118,12 +196,40 @@
     margin:8px auto ;
     font-size: 16px;
     color: white;
+    font-weight: bold;
 }
 
 .content-teaser .play-teaser img{
     width: 40px;
     height: 40px;
     margin: auto;
+}
+
+@media (max-width: 576px) {
+.teaser .img-ostad h5{
+    font-size: 1rem;
+    }
+
+    .content-teaser img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .content-teaser .play-teaser {
+        top: 25%;
+        left: 36%;
+
+    }
+
+    .content-teaser .play-teaser h5 {
+        font-size: 14px;
+    }
+
+    .content-teaser .play-teaser img {
+        width: 35px;
+        height: 35px;
+
+    }
 }
 
 .part1-col2 div .img-1-part1{
@@ -153,7 +259,7 @@
 .part2-col2 img{
     height: 25px;
     width: 60px;
-    margin: auto;
+    margin: 8px 20px;
 }
 
 .part2-col2 .title-img-p2c2{
@@ -166,27 +272,25 @@
     padding-bottom: 2px;
 }
 
-.rate input[type="radio"] {
-    opacity: 0;
-}
+@media (max-width: 576px) {
+    .part1-col2 {
+        width: 84%;
+        margin: auto;
+    }
 
-.rate input[type="radio"] {
-    cursor: pointer;
-}
+    .part2-col2 img {
+        width: 65px;
 
-.rate label:before {
-    content: '★ ';
-    margin: -16px;
-    font-size: 18px;
-    color: #bfbeb8;
-}
+    }
 
-.rate input[type="radio"]:checked~label::before {
-    color: #ffc148;
-}
+    .part1-col2 button {
+        padding: 0 20px;
+        margin: 12px auto;
+    }
 
-.rate input[type="radio"]:hover~label::before {
-    color: gold;
+    .part2-col2 h6 {
+        font-size: 15px;
+    }
 }
 
 .part-end-course{
@@ -207,4 +311,11 @@
 
 .part-end-course div:nth-child(even) {
     border-bottom: 1px solid #ffc148;
+}
+
+@media (max-width: 576px) {
+    .part-end-course {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
 }

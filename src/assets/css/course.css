@@ -236,15 +236,16 @@
     width: 55px;
     height: 55px;
     padding-bottom: 5px;
-
+    margin-left:5px ;
 }
 
 .part1-col2 div .img-2-part1 {
     width: 52px;
     height: 46px;;
     object-fit: cover;
-
+    margin-left: 5px;
 }
+
 .part1-col2 div div h6{
     color: #bfbeb8;
     font-weight: bold;
@@ -290,6 +291,10 @@
 
     .part2-col2 h6 {
         font-size: 15px;
+    }
+
+    .part2-col2 .institutes-part2{
+        margin: 5px 50px;
     }
 }
 

@@ -23,94 +23,97 @@
   </head>
 
   <body>
-    <!-- header -->
-    <header
-      class="container-xxl d-flex align-items-center justify-content-between bg-primary rounded-3 position-relative"
-      id="header"
-      data-aos="fade-up"
-    >
-      <div class="d-flex align-items-end gap-5">
-        <div class="logo-container" data-aos="fade-left">
-          <a href="">
-            <img
-              width="120"
-              src="../assets/images/logo.png"
-              alt="لوگو مبشران"
-            />
-          </a>
-        </div>
-        <div class="menu-container" data-aos="fade-up">
-          <ul
-            class="menu-list d-md-flex d-none align-items-center gap-5 text-secondary"
-          >
-            <li class="menu-item">
-              <a href="./index.html" class="menu-item-link">
-                <img
-                  class="menu-item-icon"
-                  src="../assets/images/home.png"
-                  alt="home-icon"
-                />
-                <span class="menu-item-text">صفحه اصلی</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="./courses.html" class="menu-item-link">
-                <img
-                  class="menu-item-icon"
-                  src="../assets/images/courses.png"
-                  alt="courses-icon"
-                />
-                <span class="menu-item-text">دوره ها</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="./lessons.html" class="menu-item-link">
-                <img
-                  class="menu-item-icon"
-                  src="../assets/images/lessons.png"
-                  alt="lessons-icon"
-                />
-                <span class="menu-item-text">دروس</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="./institutes.html" class="menu-item-link">
-                <img
-                  class="menu-item-icon"
-                  src="../assets/images/institutes.png"
-                  alt="institute-icon"
-                />
-                <span class="menu-item-text">موسسات</span>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="./atlas.html" class="menu-item-link">
-                <img
-                  class="menu-item-icon"
-                  src="../assets/images/atlas.png"
-                  alt="atlas-icon"
-                />
-                <span class="menu-item-text">اطلس آموزش</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        data-aos="fade-right"
-        class="auth-links-container d-md-flex d-none flex-column text-center gap-2"
+     <!-- header -->
+     <div class="w-100 position-fixed top-0 start-0"  style="z-index:30" style="z-index: 30">
+      <header
+        class="d-flex align-items-center justify-content-between container-xxl mx-auto bg-primary rounded-3"
+        id="header"
+        data-aos="fade-up"
       >
-        <a class="bg-secondary p-1 px-3 rounded-3" href="login.html">ورود</a>
-        <a class="bg-secondary-1 p-1 px-3 rounded-3" href="signup.html"
-          >ثبت نام</a
+        <div class="d-flex align-items-end gap-5">
+          <div class="logo-container" data-aos="fade-left">
+            <a href="">
+              <img
+                width="120"
+                src="../assets/images/logo.png"
+                alt="لوگو مبشران"
+              />
+            </a>
+          </div>
+          <div class="menu-container" data-aos="fade-up">
+            <ul
+              class="menu-list d-md-flex d-none align-items-center gap-5 text-secondary"
+            >
+              <li class="menu-item">
+                <a href="./index.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/home.png"
+                    alt="home-icon"
+                  />
+                  <span class="menu-item-text">صفحه اصلی</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./courses.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/courses.png"
+                    alt="courses-icon"
+                  />
+                  <span class="menu-item-text">دوره ها</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./lessons.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/lessons.png"
+                    alt="lessons-icon"
+                  />
+                  <span class="menu-item-text">دروس</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./institutes.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/institutes.png"
+                    alt="institute-icon"
+                  />
+                  <span class="menu-item-text">موسسات</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./atlas.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/atlas.png"
+                    alt="atlas-icon"
+                  />
+                  <span class="menu-item-text">اطلس آموزش</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          data-aos="fade-right"
+          class="auth-links-container d-md-flex d-none flex-column text-center gap-2"
         >
-      </div>
-      <div class="d-block d-md-none">
-        <button class="btn btn-secondary" id="open_sidebar_btn">
-          <i class="bi-layout-sidebar-inset-reverse"></i>
-        </button>
-      </div>
-    </header>
+          <a class="bg-secondary p-1 px-3 rounded-3" href="login.html">ورود</a>
+          <a class="bg-secondary-1 p-1 px-3 rounded-3" href="signup.html"
+            >ثبت نام</a
+          >
+        </div>
+        <div class="d-block d-md-none">
+          <button class="btn btn-secondary" id="open_sidebar_btn">
+            <i class="bi-layout-sidebar-inset-reverse"></i>
+          </button>
+        </div>
+      </header>
+    </div>
+
 
     <div class="main container-xxl w-100 mb-4">
       <section>

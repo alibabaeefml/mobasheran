@@ -31,3 +31,19 @@ $('.tabs-nav a').on('click', function(event){
   $('.tabs-stage div').hide();
   $($(this).attr('href')).show();
 });
+
+//play video
+$(".play-teaser").click(function(){
+  $('.video-container').get(0).play();
+  $(".video-container").attr("controls",true);
+  $(".play-teaser").addClass('d-none')
+
+});
+
+$(".save").click(function(event){
+    event.preventDefault();
+    $(".save i").toggleClass('bi-bookmark')
+    $(".save i").toggleClass('bi-bookmark-fill')
+})
+
+

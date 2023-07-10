@@ -101,7 +101,7 @@ input:focus {
 }
 
 #container {
-  width: 65%;
+  width: 90%;
   margin: auto;
 }
 
@@ -182,6 +182,10 @@ input:focus {
 
 .arrow {
   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 @media (max-width: 576px) {
   .titleSlider {
@@ -216,15 +220,15 @@ input:focus {
     padding: 8px;
   }
 }
-
 #section_two {
-  width: 65%;
+  width: 90%;
 }
 
-#section_two .box1 > div.row {
+#section_two .box1>div.row {
   height: 210px;
 }
-#section_two .box1 > div.row div {
+
+#section_two .box1>div.row div {
   height: 100px;
 }
 
@@ -233,14 +237,13 @@ input:focus {
 }
 
 #section_two .box2 .img1Box2 {
-  width: 138px;
-  height: 78px;
-  padding-top: 15px;
+  margin-top: 10px;
+  height: 60px;
 }
 
 #section_two .box2 .img2Box2 {
   width: 60px;
-  height: 80px;
+  height: 70px;
 }
 
 #section_two .box1 div img {
@@ -257,46 +260,58 @@ input:focus {
 #section_two .box2 h5 {
   color: var(--secondary);
   font-weight: bold;
-  font-size: 1.1rem;
   margin-top: 16px;
 }
 
 @media (max-width: 900px) {
   #container {
-    width: 80%;
+    width: 100%;
   }
 
   #section_two {
-    width: 80%;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  #container {
-    width: 90%;
-  }
-
-  #section_two {
-    width: 90%;
-  }
 
   #section_two .box1 {
     padding: 0 !important;
   }
 
+    #section_two .box1>div.row {
+      height: 165px;
+    }
+  
+    #section_two .box1>div.row div {
+      height: 75px;
+    }
+
   #section_two .box2 {
-    height: 150px;
+    height: 80px;
   }
 
+    #section_two div h5 {
+      font-size: 1rem;
+    }
+  
+  #section_two .box1 div img {
+    height: 45px;
+
+  }
   #section_two .box2 .img1Box2 {
-    width: 100px;
-    height: 65px;
+  height: 43px;
+  margin-top: 0px;
   }
 
   #section_two .box2 .img2Box2 {
-    width: 48px;
-    height: 65px;
+    height: 43px;
+    width: 38px;
   }
+
+    #section_two .box2 h5 {
+      margin-top: 1px;
+    }
 }
 
 #section3 div div {
@@ -304,8 +319,8 @@ input:focus {
 }
 
 #section3 .asatid {
-  width: 105px;
-  height: 105px;
+  width: 125px;
+  height: 125px;
   border: 2px solid rgba(33, 32, 32, 0.754);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -315,22 +330,22 @@ input:focus {
 }
 
 #section3 .asatid img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   padding: 1px;
 }
 
-#section3 > div {
-  width: 55%;
+#section3 .w-asatid {
+  height: 260px;
   text-align: center;
 }
 
-#section3 > div h5 {
+#section3 .asatid h5 {
   margin: 20px 0;
   font-size: 19px;
 }
 
-#section3 > div a h6 {
+#section3 .asatid a h6 {
   font-size: 14px;
   padding: 8px 0;
   width: 100px;
@@ -341,6 +356,8 @@ input:focus {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  margin: auto;
+  font-weight: bold;
 }
 
 #section3 .title {
@@ -443,11 +460,8 @@ input:focus {
 }
 
 .page3 #btnUsers {
-  width: 46%;
+  width: 98%;
   margin: 10px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -465,26 +479,20 @@ input:focus {
   padding: 2px 16px;
 }
 
-.page3 #userContain {
-  width: 80%;
-  margin: 20px auto;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  gap: 5px;
-}
-
-.page3 #userContain .users {
+.page3 .users {
   border: 2px solid var(--secondary);
   text-align: center;
   overflow: hidden;
+  margin: 0 4px;
 }
 
 .page3 #userContain .users img {
-  width: 100%;
-  height: 115px;
+  width: 220px;
+  height: 200px;
   border-bottom: 1px solid rgba(68, 67, 67, 0.761);
+  object-fit: contain;
 }
+
 .page3 #userContain .users div {
   margin: 9px 15px 20px 15px;
 }
@@ -652,6 +660,12 @@ footer .permissions-inner {
   width: 260px;
 }
 
+.section1-course .part2 select option,
+.section1-course .part2 select{
+  font-family: farhang;
+  text-align: center;
+}
+
 .section1-course .part2 select,
 .section1-course .part2 input {
   background-color: rgb(198, 206, 206);
@@ -680,7 +694,7 @@ footer .permissions-inner {
   height: 28px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 765px) {
   .section1-course {
     height: auto;
   }

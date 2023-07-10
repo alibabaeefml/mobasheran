@@ -37,6 +37,11 @@
     margin-top:6px ;
 }
 
+.section2-book .save-share button {
+    background-color: transparent;
+    
+}
+
 .section2-book .s2-part2{
     /* border: 1px solid rgba(155, 155, 155, 0.585); */
     box-shadow: -2px 5px 11px -5px rgba(191, 191, 191, 0.817);
@@ -66,12 +71,12 @@
     font-size: 18px;
 }
 
-.section2-book .s2-part2 #tab-1 .title-tab1 {
+.section2-book .s2-part2 .tab .title-tab1 {
     margin: 20px 0;
 
 }
 
-.section2-book .s2-part2 #tab-1 .borders {
+.section2-book .s2-part2 .tab .borders {
     width: 2px;
     height: 30px;
     border-right: 1px solid #616161a2;
@@ -79,12 +84,30 @@
     padding: 0;
 }
 
-.section2-book .s2-part2 #tab-1 .percent{
+.section2-book .s2-part2 .tab .percent{
     font-size: 14px;
 }
 
-.section2-book .s2-part2 #tab-1 .price{
+.section2-book .s2-part2 .tab .price{
     font-size: 24px;
+}
+
+.title-book{
+    width: 100%;
+    white-space: unset;
+
+}
+
+@media (max-width: 576px) {
+    .title-book {
+        width: 60%;
+
+    }
+}
+
+.title-book div{
+    margin: 3px 0;
+
 }
 
 .section2-store{

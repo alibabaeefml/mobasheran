@@ -220,6 +220,7 @@ input:focus {
     padding: 8px;
   }
 }
+
 #section_two {
   width: 90%;
 }
@@ -314,13 +315,18 @@ input:focus {
     }
 }
 
+#section3{
+  width: 95%;
+  margin: auto;
+}
+
 #section3 div div {
   margin: 0 auto;
 }
 
 #section3 .asatid {
-  width: 125px;
-  height: 125px;
+  width: 115px;
+  height: 115px;
   border: 2px solid rgba(33, 32, 32, 0.754);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -330,8 +336,8 @@ input:focus {
 }
 
 #section3 .asatid img {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   padding: 1px;
 }
 
@@ -341,8 +347,12 @@ input:focus {
 }
 
 #section3 .asatid h5 {
-  margin: 20px 0;
-  font-size: 19px;
+  margin: 20px auto;
+  font-size: 18px;
+  height: 40px;
+  width:110px ;
+  overflow: hidden;
+
 }
 
 #section3 .asatid a h6 {
@@ -364,6 +374,12 @@ input:focus {
   margin: 20px 0 60px 0;
   color: var(--secondary);
   height: 65px;
+}
+
+@media (max-width: 576px) {
+  #section3 {
+    width: 100%;
+  }
 }
 
 .category div {
@@ -467,7 +483,7 @@ input:focus {
 
 @media (max-width: 1000px) {
   .page3 #btnUsers {
-    width: 70%;
+    width: 98%;
   }
 }
 
@@ -487,7 +503,7 @@ input:focus {
 }
 
 .page3 #userContain .users img {
-  width: 220px;
+  width: auto;
   height: 200px;
   border-bottom: 1px solid rgba(68, 67, 67, 0.761);
   object-fit: contain;

@@ -93,7 +93,8 @@
 }
 
 .content-teaser{
-    height: 220px;
+    height: auto;
+    width: auto;
 }
 
 .content-teaser video{
@@ -103,7 +104,7 @@
 .content-teaser .play-teaser{
     width: 100px;
     margin: auto;
-    top:35%;
+    top:40%;
     left: 40%;
 }
 

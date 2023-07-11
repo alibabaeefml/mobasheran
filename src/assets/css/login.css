@@ -16,7 +16,7 @@
   }
 }
 
-.containers {
+.containers,.containers-sign {
   background: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgb(249, 249, 249) 0%,
@@ -51,7 +51,8 @@
 
 }
 
-.containers div {
+.containers div,
+.containers-sign div {
   padding: 3% 0;
   z-index: 20;
 }
@@ -70,12 +71,22 @@
   width: 250px;
 }
 
+.title-sign {
+  top: 20px;
+}
 
 
-@media (max-width: 900px) {
+
+@media (max-width: 1000px) {
   .containers {
     width: 84%;
   }
+
+  .containers-sign{
+    width: 60%;
+  }
+
+  .containers-sign div,
   .containers div {
     margin: auto;
   }
@@ -86,4 +97,38 @@
     padding: 15px 6px 1px 1px;
     margin: 0;
   }
+  .title-sign{
+    top: 45px;
+  }
+  .form-signup {
+
+    padding-top: 30px;
+  }
+  .form-sign {
+    width: 100%;
+  }
+
+  .form-sign div{
+    width: 90%;
+    margin: auto;
+  }
+  .form-sign .form-right input,
+  .form-sign .form-left input{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .containers-sign {
+    width: 84%;
+  }
+  .logo1 img {
+    padding: 8px 6px 1px 1px;
+    margin: 0;
+  }
+}
+
+.group-label{
+  font-size: 14px;
 }

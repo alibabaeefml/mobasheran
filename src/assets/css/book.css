@@ -11,7 +11,7 @@
 
 @media (max-width: 576px) {
     .section2-book {
-            width: 90%;
+        width: 90%;
      }
 }
 
@@ -63,8 +63,10 @@
     width: 120px;
 }
 
-.section2-book .s2-part2 ul li.tab-active {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.464);
+.section2-book .s2-part2 ul li.tab-active,
+ul li.tab-active li{
+    color: #0ecaf0;
+    border-bottom: 2px solid #0ecaf0;
 }
 
 .section2-book .s2-part2 ul li a{
@@ -125,4 +127,84 @@
 
 .section2-store .img-bookstore img{
     width:150px;
+}
+
+.title-books {
+    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.072);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.border-hexagon { 
+    color: #fff;
+    width: 38px;
+    height: 24px;
+    background: rgb(255, 253, 253);
+    position: absolute;
+    left:4px;
+    top: -6px;
+    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.25);
+}
+
+.border-hexagon h6{
+    padding:6px 2px;
+    font-weight: bold;
+}
+
+.border-hexagon::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.105);
+    bottom:-9px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 9px solid rgb(255, 255, 255);
+}
+
+#hexagon {
+    width: 34px;
+    height: 22px;
+    background: red;
+    margin:1px auto;
+    position: relative;
+
+}
+
+#hexagon::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -9px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 9px solid red;
+}
+
+#hexagon2 {
+    width: 34px;
+    height: 22px;
+    background: #fcbb37;
+    margin: 1px auto;
+    position: relative;
+
+}
+
+#hexagon2::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -9px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 9px solid #fcbb37;
 }

@@ -227,20 +227,24 @@ video::-webkit-media-controls-start-playback-button {
     width: 80%;
     margin: auto;
     color: rgb(132, 140, 140);
+    position: relative;
+    z-index: 0;
+    height: 40px;
 }
 
-.part-end-course div{
+.part-end-course li{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    text-align: center;
+    border-bottom: #bfbeb8 2px solid;
 }
 
-.part-end-course div:nth-child(odd){
-    border-bottom:1px solid rgb(132, 140, 140);
-}
 
-.part-end-course div:nth-child(even) {
-    border-bottom: 1px solid #ffc148;
+.part-end-course li.tab-active{
+    color:#ffc148;
+    border-bottom: 2px solid #ffc148;
+    transition: all .2s ease-out;
 }
 
 @media (max-width: 930px) {
@@ -248,4 +252,13 @@ video::-webkit-media-controls-start-playback-button {
         gap: 20px;
         margin-bottom: 30px;
     }
+}
+
+.tabs-stage{
+    width: 80%;
+    color: rgb(132, 140, 140);
+}
+
+.tab ul li{
+    margin: 5px 0;
 }

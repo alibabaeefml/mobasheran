@@ -348,6 +348,8 @@
       <!--section asatid-->
       <section id="section3" class="h-auto mt-5">
         <swiper-container
+          navigation-next-el=".next-slide2"
+          navigation-prev-el=".prev-slide2"
           id="sw1"
           grid-rows="1"
           slides-per-view="7"
@@ -463,6 +465,14 @@
               </div>
             </div>
           </swiper-slide>
+          <div class="position-absolute rounded-3">
+            <button class="prev-slide btn">
+              <img src="../assets/images/arrow-right.svg" alt="" />
+            </button>
+            <button class="next-slide btn">
+              <img class="arrow" src="../assets/images/arrow-left.svg" alt="" />
+            </button>
+          </div>
         </swiper-container>
 
         <div
@@ -562,8 +572,14 @@
           <button class="btn btn-outline-secondary">نمایش همه</button>
         </div>
 
-        <div id="userContain">
-          <swiper-container id="sw2" grid-rows="1" slides-per-view="5">
+        <div id="userContain position-relative">
+          <swiper-container
+            navigation-next-el=".next-slide2"
+            navigation-prev-el=".prev-slide2"
+            id="sw2"
+            grid-rows="1"
+            slides-per-view="5"
+          >
             <swiper-slide>
               <div class="users rounded-3">
                 <img src="../assets/images/user.png" alt="" />
@@ -682,6 +698,14 @@
               </div>
             </swiper-slide>
           </swiper-container>
+          <!-- <div class="two-btn2 position-absolute rounded-3">
+            <button class="prev-slide btn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="next-slide btn">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+          </div> -->
         </div>
       </section>
 

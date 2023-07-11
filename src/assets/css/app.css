@@ -316,15 +316,28 @@ input:focus {
 }
 
 #section3{
-  width: 95%;
+  width: 91%;
   margin: auto;
 }
 
-#section3 div div {
-  margin: 0 auto;
+.two-btn-asatid button {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-size: 18px;
+  padding: 2px 14px;
+
+  -webkit-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  -moz-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+}
+
+.two-btn-asatid button:hover {
+  background-color: #1f1f1fd8;
 }
 
 #section3 .asatid {
+  margin: auto;
   width: 115px;
   height: 115px;
   border: 2px solid rgba(33, 32, 32, 0.754);
@@ -346,7 +359,7 @@ input:focus {
   text-align: center;
 }
 
-#section3 .asatid h5 {
+#section3 .w-asatid h5 {
   margin: 20px auto;
   font-size: 18px;
   height: 40px;
@@ -355,7 +368,7 @@ input:focus {
 
 }
 
-#section3 .asatid a h6 {
+#section3 .w-asatid a h6 {
   font-size: 14px;
   padding: 8px 0;
   width: 100px;
@@ -370,7 +383,7 @@ input:focus {
   font-weight: bold;
 }
 
-#section3 .title {
+.s-title .title {
   margin: 20px 0 60px 0;
   color: var(--secondary);
   height: 65px;
@@ -418,7 +431,7 @@ input:focus {
 
 .page3 #imgSlide > div {
   width: 90%;
-  height: 300px;
+  height: auto;
   margin: auto;
   object-fit: cover;
 }
@@ -487,12 +500,24 @@ input:focus {
   }
 }
 
-.page3 #btnUsers h6 {
-  margin: 0;
+.two-btn-user button {
+  border-radius: 10px;
+  margin: 0 5px;
+  font-size: 18px;
+  padding: 4px 14px;
+  background-color: white;
+
+  -webkit-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  -moz-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
 }
 
-.page3 #btnUsers button {
-  padding: 2px 16px;
+.two-btn-user button:hover {
+  background-color: #1f1f1fd8;
+}
+
+.page3 #btnUsers h6 {
+  margin: 0;
 }
 
 .page3 .users {
@@ -739,27 +764,5 @@ footer .permissions-inner {
     margin: 20px auto;
     gap: 20px;
   }
-}
-
-
-.two-btn2 {
-  top: -70px;
-  padding: 12px;
-  z-index: 20;
-  color: black;
-}
-
-.two-btn2 button {
-  border: 1px solid #454543;
-  border-radius: 10px;
-  margin: 0 5px;
-  font-size: 14px;
-  padding: 4px 10px;
-}
-
-.two-btn button:hover {
-  border-radius: 10px;
-  border: 1px solid #1f1f1fa2;
-  background-color: rgba(0, 0, 0, 0.537);
 }
 

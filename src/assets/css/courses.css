@@ -67,3 +67,61 @@
     margin: 0;
     font-weight: normal;
 }
+
+.section2-course2{
+    width: 90%;
+    margin: auto;
+}
+
+.part1-courses2 >ul{
+    top: 5px;
+    right: -28px;
+    z-index: 2;
+}
+
+.img-logo-p1c2{
+    width: 55px;
+}
+
+.part1-c2{
+    width: auto;
+    font-weight: bold;
+}
+.border-p1c2 {
+    border: 1px solid #ffc148;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.img-course2{
+    width: auto;
+}
+
+.img-course2 img{
+    width: 100%;
+    height: 142px;
+    object-fit: cover;
+}
+
+.part1-c2 .title-part1{
+    border-top: 2px solid #ffc148;
+    border-bottom: 1px solid #ffc148;
+}
+
+.titles-c2 img{
+    width: 50px;
+}
+
+.titles-c2 .h-title-c2{
+    font-size: 13px;
+}
+
+.img-ostad-c2 img{
+    width: 48px;
+}
+
+.btn-abute {
+    background-color: #fff1dc;
+    font-size: 14px;
+}

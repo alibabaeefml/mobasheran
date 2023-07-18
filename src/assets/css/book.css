@@ -121,6 +121,15 @@ ul li.tab-active li{
     font-size: 1.15rem;
 }
 
+.section2-store .img-bookstore {
+    margin: 20px 10px;
+}
+
+.section2-store .img-bookstore .title-books{
+    width: 160px;
+    margin: 20px auto;
+}
+
 .section2-store .title-bookstore i{
     font-size: 14px;
 }

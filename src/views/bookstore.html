@@ -226,86 +226,245 @@
           <div
             class="title-bookstore mt-5 mb-3 d-flex flex-row justify-content-between"
           >
-            <h5 class="text-info fw-bold">کتاب های مبشران</h5>
-            <!-- <div>
-            <span class="text-secondary fw-bold">مشاهده همه</span>
-            <i class="bi bi-chevron-left text-secondary"></i>
-          </div> -->
+            <h5 class="text-info fw-bold pt-2">کتاب های مبشران</h5>
+            <div class="two-btn-user rounded-3">
+              <button class="prev-slide-book border-0 pt-2">
+                <i class="bi bi-arrow-right-circle"></i>
+              </button>
+              <button class="next-slide-book border-0 pt-2">
+                <i class="bi bi-arrow-left-circle"></i>
+              </button>
+            </div>
           </div>
 
-          <div
-            class="img-bookstore d-flex flex-row flex-wrap justify-content-between"
-          >
-            <div class="title-books rounded-2 position-relative">
-              <img class="rounded-2" src="../assets/images/book.png" alt="" />
-              <h6 class="fw-bold mt-3">دو و نیم</h6>
-              <h6>جیمز کیلر</h6>
-              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
-            </div>
+          <div class="img-bookstore m-2">
+            <swiper-container
+              navigation-next-el=".next-slide-book"
+              navigation-prev-el=".prev-slide-book"
+              id="sw-book"
+              grid-rows="1"
+              slides-per-view="5"
+              init="true"
+            >
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>30%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
 
-            <div class="title-books rounded-2 position-relative">
-              <div class="border-hexagon">
-                <div id="hexagon"><h6>30%</h6></div>
-              </div>
-              <img class="rounded-2" src="../assets/images/book.png" alt="" />
-              <h6 class="fw-bold mt-3">دو و نیم</h6>
-              <h6>جیمز کیلر</h6>
-              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
-            </div>
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>50%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
 
-            <div class="title-books rounded-2 position-relative">
-              <div class="border-hexagon">
-                <div id="hexagon"><h6>50%</h6></div>
-              </div>
-              <img class="rounded-2" src="../assets/images/book.png" alt="" />
-              <h6 class="fw-bold mt-3">دو و نیم</h6>
-              <h6>جیمز کیلر</h6>
-              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
-            </div>
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon2"><h6>20%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
 
-            <div class="title-books rounded-2 position-relative">
-              <div class="border-hexagon">
-                <div id="hexagon2"><h6>20%</h6></div>
-              </div>
-              <img class="rounded-2" src="../assets/images/book.png" alt="" />
-              <h6 class="fw-bold mt-3">دو و نیم</h6>
-              <h6>جیمز کیلر</h6>
-              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
-            </div>
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>30%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
 
-            <div class="title-books rounded-2 position-relative">
-              <div class="border-hexagon">
-                <div id="hexagon"><h6>30%</h6></div>
-              </div>
-              <img class="rounded-2" src="../assets/images/book.png" alt="" />
-              <h6 class="fw-bold mt-3">دو و نیم</h6>
-              <h6>جیمز کیلر</h6>
-              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
-            </div>
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>30%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon2"><h6>20%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>50%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon"><h6>30%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon2"><h6>20%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div class="title-books rounded-2 position-relative">
+                  <div class="border-hexagon">
+                    <div id="hexagon2"><h6>20%</h6></div>
+                  </div>
+                  <img
+                    class="rounded-2"
+                    src="../assets/images/book.png"
+                    alt=""
+                  />
+                  <h6 class="fw-bold mt-3">دو و نیم</h6>
+                  <h6>جیمز کیلر</h6>
+                  <h5 class="text-secondary-1 fw-bold text-center">
+                    88 هزارتومان
+                  </h5>
+                </div>
+              </swiper-slide>
+            </swiper-container>
           </div>
         </div>
 
         <div class="py-3">
-          <div
-            class="title-bookstore mt-5 mb-3 d-flex flex-row justify-content-between"
-          >
+          <div class="title-bookstore mt-5 mb-3 d-flex flex-row">
             <h5 class="text-info fw-bold">سایر کتاب ها</h5>
-            <!-- <div>
-            <span class="text-secondary fw-bold">مشاهده همه</span>
-            <i class="bi bi-chevron-left text-secondary"></i>
-          </div> -->
           </div>
           <div
             class="img-bookstore d-flex flex-row flex-wrap justify-content-between"
           >
-            <div class="title-books rounded-2 position-relative">
+            <div class="title-books mx-auto rounded-2 position-relative">
               <img class="rounded-2" src="../assets/images/book.png" alt="" />
               <h6 class="fw-bold mt-3">دو و نیم</h6>
               <h6>جیمز کیلر</h6>
               <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
             </div>
 
-            <div class="title-books rounded-2 position-relative">
+            <div class="title-books mx-auto rounded-2 position-relative">
+              <img class="rounded-2" src="../assets/images/book.png" alt="" />
+              <h6 class="fw-bold mt-3">دو و نیم</h6>
+              <h6>جیمز کیلر</h6>
+              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
+            </div>
+
+            <div class="title-books mx-auto rounded-2 position-relative">
               <div class="border-hexagon">
                 <div id="hexagon"><h6>30%</h6></div>
               </div>
@@ -315,7 +474,27 @@
               <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
             </div>
 
-            <div class="title-books rounded-2 position-relative">
+            <div class="title-books mx-auto rounded-2 position-relative">
+              <div class="border-hexagon">
+                <div id="hexagon"><h6>30%</h6></div>
+              </div>
+              <img class="rounded-2" src="../assets/images/book.png" alt="" />
+              <h6 class="fw-bold mt-3">دو و نیم</h6>
+              <h6>جیمز کیلر</h6>
+              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
+            </div>
+
+            <div class="title-books mx-auto rounded-2 position-relative">
+              <div class="border-hexagon">
+                <div id="hexagon"><h6>30%</h6></div>
+              </div>
+              <img class="rounded-2" src="../assets/images/book.png" alt="" />
+              <h6 class="fw-bold mt-3">دو و نیم</h6>
+              <h6>جیمز کیلر</h6>
+              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
+            </div>
+
+            <div class="title-books mx-auto rounded-2 position-relative">
               <div class="border-hexagon">
                 <div id="hexagon"><h6>50%</h6></div>
               </div>
@@ -325,7 +504,7 @@
               <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
             </div>
 
-            <div class="title-books rounded-2 position-relative">
+            <div class="title-books mx-auto rounded-2 position-relative">
               <div class="border-hexagon">
                 <div id="hexagon2"><h6>20%</h6></div>
               </div>
@@ -335,7 +514,27 @@
               <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
             </div>
 
-            <div class="title-books rounded-2 position-relative">
+            <div class="title-books mx-auto rounded-2 position-relative">
+              <div class="border-hexagon">
+                <div id="hexagon2"><h6>20%</h6></div>
+              </div>
+              <img class="rounded-2" src="../assets/images/book.png" alt="" />
+              <h6 class="fw-bold mt-3">دو و نیم</h6>
+              <h6>جیمز کیلر</h6>
+              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
+            </div>
+
+            <div class="title-books mx-auto rounded-2 position-relative">
+              <div class="border-hexagon">
+                <div id="hexagon2"><h6>20%</h6></div>
+              </div>
+              <img class="rounded-2" src="../assets/images/book.png" alt="" />
+              <h6 class="fw-bold mt-3">دو و نیم</h6>
+              <h6>جیمز کیلر</h6>
+              <h5 class="text-secondary-1 fw-bold text-center">88 هزارتومان</h5>
+            </div>
+
+            <div class="title-books mx-auto rounded-2 position-relative">
               <div class="border-hexagon">
                 <div id="hexagon"><h6>30%</h6></div>
               </div>
@@ -533,7 +732,45 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap-v5.3.0/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/aos/aos.js"></script>
-    <!-- <script src="../assets/vendor/swiper-element-v9.4.1/swiper-element-bundle.min.js"></script> -->
+    <script src="../assets/vendor/swiper-element-v9.4.1/swiper-element-bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script>
+      // swiper element
+      const swiperEl = document.querySelector("#sw-book");
+
+      // swiper parameters
+      const swiperParams = {
+        slidesPerView: 1,
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+          },
+          486: {
+            slidesPerView: 2,
+          },
+          715: {
+            slidesPerView: 3,
+          },
+          944: {
+            slidesPerView: 4,
+          },
+          1160: {
+            slidesPerView: 5,
+          },
+        },
+        on: {
+          init() {
+            // ...
+          },
+        },
+      };
+
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl, swiperParams);
+
+      // and now initialize it
+      swiperEl.initialize();
+    </script>
   </body>
 </html>

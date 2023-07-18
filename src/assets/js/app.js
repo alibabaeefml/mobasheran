@@ -47,3 +47,37 @@ $(".save").click(function(event){
 })
 
 
+//menubar right
+
+$(".menubar-right").click(function(){
+    $(".menubar-right").toggleClass('d-none')
+    $(".menu-right").toggleClass('d-block')
+})
+
+$(".close-right").click(function(){
+    $(".menu-right").toggleClass('d-block')
+})
+
+
+//border icon panel
+$(".list-menu-right a").each(function(){
+    $(this).click(function(){
+        $(".list-menu-right a").each(function(){
+            $(this).find('.shape1').removeClass('shape1').addClass("shape2");
+        })
+        $(this).find('.shape2').toggleClass("shape1").toggleClass("shape2")
+    })
+})
+
+
+$(".list-tab .shape1").each(function(){
+    $(this).click(function(event){
+        $(".list-tab .shape1").each(function(){
+            $(".list-tab .shape1").css({ WebkitTransform: 'rotate(-45deg)'});
+        })
+        $(this).toggleClass("rotateClass");
+        $(event.target).parent().parent().parent().children().eq(1).toggleClass('d-none')
+    })
+})
+
+

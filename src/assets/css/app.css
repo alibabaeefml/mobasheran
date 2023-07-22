@@ -299,13 +299,13 @@ input:focus {
     padding: 0 !important;
   }
 
-    #section_two .box1>div.row {
-      height: 165px;
-    }
+  #section_two .box1>div.row {
+    height: 165px;
+  }
   
-    #section_two .box1>div.row div {
-      height: 75px;
-    }
+  #section_two .box1>div.row div {
+    height: 75px;
+  }
 
   #section_two .box2 {
     height: 80px;
@@ -345,46 +345,52 @@ input:focus {
   margin: 0 5px;
   font-size: 18px;
   padding: 2px 14px;
-
-  -webkit-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
-  -moz-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
-  box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  box-shadow: 1px 1px 1px #b5b5b5c3;
+  border: 1px solid #b5b5b5c3;
+    
 }
 
 .two-btn-asatid button:hover {
   background-color: #1f1f1fd8;
 }
 
-#section3 .asatid {
-  margin: auto;
-  width: 115px;
-  height: 115px;
-  border: 2px solid rgba(33, 32, 32, 0.754);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-#section3 .asatid img {
-  width: 110px;
-  height: 110px;
-  padding: 1px;
-}
-
 #section3 .w-asatid {
-  height: 260px;
+  width: 230px;
+  height: 360px;
   text-align: center;
 }
 
+#section3 .asatid {
+  margin: auto;
+  width: 205px;
+  height: 205px;
+  border: 2px solid rgba(33, 32, 32, 0.754);
+  border-radius: 50%;
+}
+
+#section3 .asatid img {
+  width: 200px;
+  height: 200px;
+  padding: 1px;
+}
+
+#section3 .name-asatid{
+  height: 100px;
+  margin: auto;
+}
+
 #section3 .w-asatid h5 {
-  margin: 20px auto;
+  margin:10px auto;
   font-size: 18px;
-  height: 40px;
-  width:110px ;
+  width:auto ;
   overflow: hidden;
 
+}
+
+#section3 .w-asatid h6 {
+  color: #717171;
+  height: 35px;
+  overflow: hidden;
 }
 
 #section3 .w-asatid a h6 {
@@ -525,10 +531,8 @@ input:focus {
   font-size: 18px;
   padding: 4px 14px;
   background-color: white;
-
-  -webkit-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
-  -moz-box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
-  box-shadow: 0px 5px 14px -1px rgba(27, 27, 27, 0.252);
+  box-shadow: 1px 1px 1px #b5b5b5c3;
+  border: 1px solid #b5b5b5c3;
 }
 
 .two-btn-user button:hover {
@@ -540,10 +544,11 @@ input:focus {
 }
 
 .page3 .users {
-  border: 2px solid var(--secondary);
+border: 2px solid #c6c6c654;
   text-align: center;
   overflow: hidden;
-  margin: 0 4px;
+  box-shadow: 1px 1px 2px 1px #aaa;
+  margin: 5px;
 }
 
 .page3 #userContain .users img {
@@ -754,7 +759,7 @@ footer .permissions-inner {
   height: 28px;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .section1-course {
     height: auto;
   }

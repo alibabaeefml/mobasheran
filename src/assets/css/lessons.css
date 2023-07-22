@@ -262,3 +262,7 @@ video::-webkit-media-controls-start-playback-button {
 .tab ul li{
     margin: 5px 0;
 }
+
+.link-tab{
+    height: 48px;
+}

@@ -44,7 +44,8 @@
 
 .section2-book .s2-part2{
     /* border: 1px solid rgba(155, 155, 155, 0.585); */
-    box-shadow: -2px 5px 11px -5px rgba(191, 191, 191, 0.817);
+        box-shadow: 1px 1px 1px #b5b5b5c3;
+            border: 1px solid #b5b5b5c3;
 }
 
 @media (max-width: 576px) {
@@ -65,8 +66,8 @@
 
 .section2-book .s2-part2 ul li.tab-active,
 ul li.tab-active li{
-    color: #0ecaf0;
-    border-bottom: 2px solid #0ecaf0;
+    color: #00b599;
+    border-bottom: 2px solid #00b599;
 }
 
 .section2-book .s2-part2 ul li a{
@@ -100,7 +101,7 @@ ul li.tab-active li{
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 760px) {
     .title-book {
         width: 60%;
 
@@ -108,7 +109,7 @@ ul li.tab-active li{
 }
 
 .title-book div{
-    margin: 3px 0;
+    margin: 4px 0;
 
 }
 
@@ -139,9 +140,10 @@ ul li.tab-active li{
 }
 
 .title-books {
-    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.072);
     padding: 5px;
     margin-top: 5px;
+    box-shadow: 1px 1px 1px #b5b5b5c3;
+    border: 1px solid #b5b5b5c3;
 }
 
 .border-hexagon { 
@@ -152,7 +154,7 @@ ul li.tab-active li{
     position: absolute;
     left:4px;
     top: -6px;
-    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 1px #b5b5b5c3;
 }
 
 .border-hexagon h6{
@@ -164,7 +166,8 @@ ul li.tab-active li{
     content: "";
     position: absolute;
     z-index: 1;
-    box-shadow: 0px 11px 19px 7px rgba(0, 0, 0, 0.105);
+    box-shadow: 1px 1px 1px #b5b5b5c3;
+    border: 1px solid #b5b5b5c3;
     bottom:-9px;
     left: 0;
     width: 0;

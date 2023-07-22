@@ -355,6 +355,7 @@ input:focus {
 }
 
 #section3 .w-asatid {
+  width: 230px;
   height: 360px;
   text-align: center;
 }
@@ -543,10 +544,11 @@ input:focus {
 }
 
 .page3 .users {
-  border: 2px solid var(--secondary);
+border: 2px solid #c6c6c654;
   text-align: center;
   overflow: hidden;
-  margin: 0 4px;
+  box-shadow: 1px 1px 2px 1px #aaa;
+  margin: 5px;
 }
 
 .page3 #userContain .users img {
@@ -757,7 +759,7 @@ footer .permissions-inner {
   height: 28px;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .section1-course {
     height: auto;
   }

@@ -59,17 +59,8 @@ $(".close-right").click(function(){
 })
 
 
-//border icon panel
-$(".list-menu-right a").each(function(){
-    $(this).click(function(){
-        $(".list-menu-right a").each(function(){
-            $(this).find('.shape1').removeClass('shape1').addClass("shape2");
-        })
-        $(this).find('.shape2').toggleClass("shape1").toggleClass("shape2")
-    })
-})
 
-
+//tab show
 $(".list-tab .shape1").each(function(){
     $(this).click(function(event){
         $(".list-tab .shape1").each(function(){

@@ -277,51 +277,90 @@
                 >
                   دروس دوره
                 </div>
+                <div class="py-3 position-relative">
+                  <swiper-container
+                    navigation-next-el=".next-slide-asatid"
+                    navigation-prev-el=".prev-slide-asatid"
+                    id="sw-asatid"
+                    grid-rows="1"
+                    slides-per-view="4"
+                  >
+                    <swiper-slide>
+                      <div
+                        class="img-ostad d-flex flex-column justify-content-center mx-auto"
+                      >
+                        <a href="#" class="mx-auto">
+                          <img src="../assets/images/ostad-course.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <h6 class="text-center">حجت الاسلام فقیهی</h6>
+                        </a>
+                      </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                      <div
+                        class="img-ostad d-flex flex-column justify-content-center mx-auto"
+                      >
+                        <a href="#" class="mx-auto">
+                          <img src="../assets/images/ostad-course.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <h6 class="text-center">حجت الاسلام فقیهی</h6>
+                        </a>
+                      </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                      <div
+                        class="img-ostad d-flex flex-column justify-content-center mx-auto"
+                      >
+                        <a href="#" class="mx-auto">
+                          <img src="../assets/images/ostad-course.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <h6 class="text-center">حجت الاسلام فقیهی</h6>
+                        </a>
+                      </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                      <div
+                        class="img-ostad d-flex flex-column justify-content-center mx-auto"
+                      >
+                        <a href="#" class="mx-auto">
+                          <img src="../assets/images/ostad-course.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <h6 class="text-center">حجت الاسلام فقیهی</h6>
+                        </a>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div
+                        class="img-ostad d-flex flex-column justify-content-center mx-auto"
+                      >
+                        <a href="#" class="mx-auto">
+                          <img src="../assets/images/ostad-course.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <h6 class="text-center">حجت الاسلام فقیهی</h6>
+                        </a>
+                      </div>
+                    </swiper-slide>
+                  </swiper-container>
+                </div>
                 <div
-                  class="py-3 d-flex flex-md-row flex-wrap justify-content-around"
+                  class="position-absolute left-0 w-100 z-2"
+                  style="top: 34px"
                 >
-                  <div
-                    class="img-ostad d-flex flex-column justify-content-center mx-auto"
-                  >
-                    <a href="#" class="mx-auto">
-                      <img src="../assets/images/ostad-course.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <h6>حجت الاسلام فقیهی</h6>
-                    </a>
-                  </div>
-
-                  <div
-                    class="img-ostad d-flex flex-column justify-content-center mx-auto"
-                  >
-                    <a href="#" class="mx-auto">
-                      <img src="../assets/images/ostad-course.png" alt="" />
-                    </a>
-                    <a href="#"><h6>حجت الاسلام فقیهی</h6> </a>
-                  </div>
-
-                  <div
-                    class="img-ostad d-flex flex-column justify-content-center mx-auto"
-                  >
-                    <a href="#" class="mx-auto">
-                      <img src="../assets/images/ostad-course.png" alt="" />
-                    </a>
-                    <a href="#"><h6>حجت الاسلام فقیهی</h6> </a>
-                  </div>
-
-                  <div
-                    class="img-ostad d-flex flex-column justify-content-center mx-auto"
-                  >
-                    <a href="#" class="mx-auto">
-                      <img src="../assets/images/ostad-course.png" alt="" />
-                    </a>
-                    <a href="#"><h6>حجت الاسلام فقیهی</h6> </a>
-                  </div>
-
-                  <div
-                    class="img-ostad d-flex flex-column justify-content-end mx-auto"
-                  >
-                    <a href="#"><h6 class="my-0">دیدن همه اساتید</h6></a>
+                  <div class="d-flex flex-row justify-content-between">
+                    <button class="prev-slide-asatid btn border-0 pt-2">
+                      <i class="bi bi-arrow-right-circle"></i>
+                    </button>
+                    <button class="next-slide-asatid btn border-0 pt-2">
+                      <i class="bi bi-arrow-left-circle"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -631,7 +670,36 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap-v5.3.0/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/aos/aos.js"></script>
-    <!-- <script src="../assets/vendor/swiper-element-v9.4.1/swiper-element-bundle.min.js"></script> -->
+    <script src="../assets/vendor/swiper-element-v9.4.1/swiper-element-bundle.min.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script>
+      // swiper element
+      const swiperEl2 = document.querySelector("#sw-asatid");
+
+      // swiper parameters
+      const swiperParams2 = {
+        slidesPerView: 1,
+        breakpoints: {
+          300: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+        on: {
+          init() {
+            // ...
+          },
+        },
+      };
+
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl2, swiperParams2);
+
+      // and now initialize it
+      swiperEl2.initialize();
+    </script>
   </body>
 </html>

@@ -1,0 +1,133 @@
+
+
+.section-list-teacher {
+    margin-top: 100px;
+    
+}
+
+.section-list-teacher .list-teacher{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.section-list-teacher .title-list-teacher{
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/index-swiper-section-one-bg.jpg);
+    background-size: cover;
+    background-repeat: none-repeat;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.section-list-teacher .title-list-teacher::after{
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 100px;
+}
+
+.section-list-teacher .title-list-teacher h5{
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    color: wheat;
+
+}
+
+.section-list-teacher .form-teacher input,
+.section-list-teacher .form-teacher button{
+    border: 1px solid #d5d9dc;
+    box-shadow: 2px 2px 1px #c8c8c8b5;
+}
+
+.section-list-teacher .form-teacher select{
+    width: 187px;
+    height: 42px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #d5d9dc;
+    box-shadow: 2px 2px 1px #c8c8c8b5;
+}
+
+.section-list-teacher .item-teacher .img-list{
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: -8px 20px 23px -3px rgba(160, 160, 160, 0.778);
+}
+
+.section-list-teacher .item-teacher span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: linear-gradient(#FFE6B4 0%, #EDD6A7 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.section-list-teacher .item-teacher .span-2 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: linear-gradient(#79c1ff 0%, #a4d5ff 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.section-list-teacher .item-teacher{
+    width: 270px;
+    height: 320px;
+    
+}
+
+.section-list-teacher .item-teacher img{
+    margin: auto;
+    width: 270px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.section-list-teacher .item-teacher .name-list{
+    background-color: rgba(35, 35, 35, 0.623);
+    height: 53px;
+    width: 100%;
+    color: wheat;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 6px 10px;
+}
+
+.section-list-teacher .item-teacher .name-list h6{
+    margin: 1px 0;
+    font-weight: bold;
+}
+
+.section-list-teacher .item-teacher .name-list h6.detail-list {
+    font-size: 15px;
+    color: rgb(214, 214, 214);
+}

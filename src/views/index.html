@@ -362,9 +362,11 @@
           </div>
         </div>
         <swiper-container
+          data-aos-duration="1500"
+          data-aos="fade-right"
           navigation-next-el=".next-slide-asatid"
           navigation-prev-el=".prev-slide-asatid"
-          id="sw1"
+          id="sw-asatid"
           grid-rows="1"
           slides-per-view="7"
           init="true"
@@ -550,6 +552,8 @@
           <h4 class="fw-bold pt-2 text-secondary">دسته بندی موضوعی</h4>
         </div>
         <div
+          data-aos-duration="1500"
+          data-aos="fade-left"
           class="category w-100 m-auto d-flex flex-wrap justify-content-center gap-3 text-center"
         >
           <div>
@@ -644,11 +648,11 @@
           </div>
         </div>
 
-        <div id="userContain position-relative">
+        <div id="userContain" data-aos-duration="1500" data-aos="fade-right">
           <swiper-container
             navigation-next-el=".next-slide-user"
             navigation-prev-el=".prev-slide-user"
-            id="sw2"
+            id="sw-users-index"
             grid-rows="1"
             slides-per-view="5"
           >
@@ -777,7 +781,11 @@
         <div class="title w-100">
           <h5>گنجینه آرشیوی(پویش ها)</h5>
         </div>
-        <div class="archive mx-auto">
+        <div
+          class="archive mx-auto"
+          data-aos-duration="1500"
+          data-aos="fade-left"
+        >
           <div class="row g-3 w-100 h-auto text-center mx-auto">
             <div class="col">
               <div class="bg-primary rounded-4 pt-1">
@@ -1057,7 +1065,7 @@
     <script src="../assets/js/app.js"></script>
     <script>
       // swiper element
-      const swiperEl = document.querySelector("#sw1");
+      const swiperEl = document.querySelector("#sw-asatid");
 
       // swiper parameters
       const swiperParams = {
@@ -1093,7 +1101,7 @@
       swiperEl.initialize();
 
       // swiper element
-      const swiperEl2 = document.querySelector("#sw2");
+      const swiperEl2 = document.querySelector("#sw-users-index");
 
       // swiper parameters
       const swiperParams2 = {

@@ -11,7 +11,7 @@
 }
 
 .section1-teacher .img-teacher{
-    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    box-shadow: -8px 20px 23px -3px rgba(153, 153, 153, 0.63);
     border: 1px solid #d5d9dc;
     height: 370px;
     width: 80%;
@@ -50,7 +50,7 @@
 
 .section1-teacher .border-teacher div{
     border: 1px solid #d5d9dc;
-    box-shadow: 2px 2px 1px #b3b3b3;
+    box-shadow: -8px 20px 23px -3px rgba(196, 196, 196, 0.63);
     border-radius: 10px;
     padding: 6px 15px;
     width: 180px;
@@ -98,14 +98,14 @@
 
 .timeline-img::after {
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: #002e4a;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    margin-top: 25px;
-    margin-left: -15px;
+    margin-top: 30px;
+    margin-left: -10px;
 }
 
 .timeline-content {
@@ -128,29 +128,29 @@
     justify-content: end;
 }
 
-.timeline-item:nth-child(odd)::before {
+.timeline-item:nth-child(even) .timeline-content::before {
     content: "";
     position: absolute;
     border-style: solid;
     width: 0;
     height: 0;
     top: 30px;
-    left: 500px;
+    left: -13px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -13px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent;
     rotate: 180deg;
-}
-
-.timeline-item:nth-child(even)::before {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    right: 500px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
 }
 
 .timeline-item h6{
@@ -195,6 +195,25 @@
         width: 80%;
         margin: auto;
     }
+}
+
+@media (max-width: 550px) {
+
+    .timeline-content {
+        margin: auto;
+        width: 80%;
+    }
+
+    .timeline-img::before {
+        content: "";
+        display: none;
+    }
+
+    .timeline-img::after {
+        content: "";
+        display: none;
+    }
+    
 }
 
 @media (max-width: 430px) {

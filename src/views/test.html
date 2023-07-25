@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مبشران | ثبت درخواست جدید</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap-v5.3.0/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/panel.css" />
+    <link rel="stylesheet" href="../assets/css/test.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div
+      class="w-100 position-fixed top-0 start-0"
+      style="z-index: 30"
+      style="z-index: 30"
+    >
+      <header
+        class="d-flex align-items-center justify-content-between container-xxl mx-auto bg-primary rounded-3"
+        id="header"
+        data-aos="fade-up"
+      >
+        <div class="d-flex align-items-end gap-5">
+          <div class="logo-container" data-aos="fade-left">
+            <a href="">
+              <img
+                width="120"
+                src="../assets/images/logo.png"
+                alt="لوگو مبشران"
+              />
+            </a>
+          </div>
+          <div class="menu-container" data-aos="fade-up">
+            <ul
+              class="menu-list d-lg-flex d-none align-items-center gap-5 text-secondary"
+            >
+              <li class="menu-item">
+                <a href="./index.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/home.png"
+                    alt="home-icon"
+                  />
+                  <span class="menu-item-text">صفحه اصلی</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./courses.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/courses.png"
+                    alt="courses-icon"
+                  />
+                  <span class="menu-item-text">دوره ها</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./lessons.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/lessons.png"
+                    alt="lessons-icon"
+                  />
+                  <span class="menu-item-text">دروس</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./institutes.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/institutes.png"
+                    alt="institute-icon"
+                  />
+                  <span class="menu-item-text">موسسات</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./atlas.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/atlas.png"
+                    alt="atlas-icon"
+                  />
+                  <span class="menu-item-text">اطلس آموزش</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          data-aos="fade-right"
+          class="auth-links-container d-lg-flex d-none text-center gap-2"
+        >
+          <a class="link-panel rounded-circle" href="signup.html"
+            ><div class="mt-1 px-2">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+          </a>
+          <a class="link-panel rounded-circle" href="login.html"
+            ><div class="mt-1 px-2">
+              <i class="bi bi-arrow-bar-left"></i>
+            </div>
+          </a>
+        </div>
+        <div class="d-block d-lg-none">
+          <button class="btn btn-secondary" id="open_sidebar_btn">
+            <i class="bi-layout-sidebar-inset-reverse"></i>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <div class="main container-xxl p-0 w-100 mb-4">
+      <!-- sidebar -->
+      <section id="sidebar" class="w-100 h-100 fixed-top" style="right: -100%">
+        <div
+          class="w-50 bg-primary border-end border-3 border-secondary-1 menu-container h-100 position-relative"
+        >
+          <button
+            id="close_sidebar_btn"
+            class="btn btn-secondary p-0 position-absolute end-0 m-3 fs-3"
+            style="width: 30px; height: 30px"
+          >
+            <i class="bi-x"></i>
+          </button>
+          <ul
+            class="menu-list h-100 ps-5 d-flex flex-column justify-content-center gap-5 text-secondary"
+          >
+            <li class="menu-item">
+              <a href="./index.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/home.png"
+                  alt="home-icon"
+                />
+                <span class="menu-item-text">صفحه اصلی</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./courses.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/courses.png"
+                  alt="courses-icon"
+                />
+                <span class="menu-item-text">دوره ها</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./lessons.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/lessons.png"
+                  alt="lessons-icon"
+                />
+                <span class="menu-item-text">دروس</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./institutes.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/institutes.png"
+                  alt="institute-icon"
+                />
+                <span class="menu-item-text">موسسات</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./atlas.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/atlas.png"
+                  alt="atlas-icon"
+                />
+                <span class="menu-item-text">اطلس آموزش</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./signin.html" class="menu-item-link">
+                <i class="bi-person text-secondary-1"></i>
+                <span class="menu-item-text">ورود</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./signup.html" class="menu-item-link">
+                <i class="bi-person text-secondary-1"></i>
+                <span class="menu-item-text">ثبت نام</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="menu-right">
+        <div class="close-right d-none">
+          <i class="bi bi-x text-secondary"></i>
+        </div>
+        <div class="flex flex-column list-menu-right">
+          <div class="title-userpanel d-flex flex-row my-3 bg-light rounded-5">
+            <h6>حسین پورعسگری</h6>
+            <img
+              style="margin-top: 5px"
+              class="rounded-circle"
+              width="30"
+              height="30"
+              src="../assets/images/user.png"
+              alt=""
+            />
+          </div>
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape1"></div>
+              <h6 class="fw-bold">آموزش های من</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>موسسات من</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>کتابخانه من</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>حساب کاربری</h6>
+            </div>
+          </a>
+
+          <a href="newrequest.html">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>درخواست ها</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>خروج</h6>
+            </div>
+          </a>
+          <div class="mt-5">
+            <img width="75" src="../assets/images/bg-new.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="new-navbar">
+        <div class="d-flex flex-row">
+          <div class="menubar-right d-none">
+            <i class="bi bi-three-dots-vertical text-secondary"></i>
+          </div>
+          <div class="row">
+            <div class="col-4 el-odd">
+              <div class="d-flex justify-content-center flex-column mx-auto">
+                <img
+                  width="33"
+                  height="33"
+                  src="../assets/images/lessonsGreen.png"
+                  alt=""
+                />
+                <h6 class="fw-bold">دروس مبشران</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="d-flex justify-content-center flex-column mx-auto">
+                <img
+                  width="40"
+                  height="40"
+                  src="../assets/images/lessonsGreen.png"
+                  alt=""
+                />
+                <h6 class="fw-bold">دروس مبشران</h6>
+              </div>
+            </div>
+
+            <div class="col-4 el-odd">
+              <div class="d-flex justify-content-center flex-column mx-auto">
+                <img
+                  width="33"
+                  height="33"
+                  src="../assets/images/lessonsGreen.png"
+                  alt=""
+                />
+                <h6 class="fw-bold">دروس مبشران</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-containers">
+          <div class="border-test rounded-4">
+            <div class="head-test pb-5">
+              <div class="d-flex flex-row my-1">
+                <img src="../" alt="" />
+                <h5 class="fw-bold">آزمون احکام و عفاف (20دقیقه)</h5>
+              </div>
+              <div class="d-flex flex-row my-2">
+                <i class="bi bi-clock-history" style="font-size: 19px"></i>
+                <h5 class="fw-bold mx-1">زمان باقی مانده:</h5>
+                <h6 class="fw-bold text-secondary-1">10:53</h6>
+              </div>
+            </div>
+            <div class="contain-test h-50">
+              <div class="title-test">
+                <div class="d-flex flex-row">
+                  <div class="mx-4"><h6 class="fw-bold">سوال ها</h6></div>
+                  <div class="">
+                    <div class="tabs">
+                      <ul class="tabs-nav d-flex flex-row flex-wrap gap-3">
+                        <li>
+                          <a class="" href="#tab-1">1</a>
+                        </li>
+                        <li><a class="" href="#tab-2">2</a></li>
+
+                        <li>
+                          <a class="" href="#tab-3">3</a>
+                        </li>
+                        <li><a class="" href="#tab-4">4</a></li>
+
+                        <li>
+                          <a class="" href="#tab-5">5</a>
+                        </li>
+                        <li><a class="" href="#tab-6">6</a></li>
+
+                        <li>
+                          <a class="" href="#tab-7">7</a>
+                        </li>
+                        <li><a class="" href="#tab-8">8</a></li>
+                        <li><a class="" href="#tab-9">9</a></li>
+                        <li><a class="" href="#tab-10">10</a></li>
+                      </ul>
+                      <div class="tabs-stage">
+                        <div id="tab-1" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>1</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q1-1" name="q1" />
+                                <label for="q1-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q1-2" name="q1" />
+                                <label for="q1-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q1-3" name="q1" />
+                                <label for="q1-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q1-4" name="q1" />
+                                <label for="q1-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div id="tab-2" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>2</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q2-1" name="q2" />
+                                <label for="q2-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q2-2" name="q2" />
+                                <label for="q2-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q2-3" name="q2" />
+                                <label for="q2-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q2-4" name="q2" />
+                                <label for="q2-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-3" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>3</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q3-1" name="q3" />
+                                <label for="q3-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q3-2" name="q3" />
+                                <label for="q3-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q3-3" name="q3" />
+                                <label for="q3-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q3-4" name="q3" />
+                                <label for="q3-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-4" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>4</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q4-1" name="q4" />
+                                <label for="q4-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q4-2" name="q4" />
+                                <label for="q4-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q4-3" name="q4" />
+                                <label for="q4-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q4-4" name="q4" />
+                                <label for="q4-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-5" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>5</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q5-1" name="q5" />
+                                <label for="q5-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q5-2" name="q5" />
+                                <label for="q5-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q5-3" name="q5" />
+                                <label for="q5-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q5-4" name="q5" />
+                                <label for="q5-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-6" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>6</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q6-1" name="q6" />
+                                <label for="q6-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q6-2" name="q6" />
+                                <label for="q6-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q6-3" name="q6" />
+                                <label for="q6-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q6-4" name="q6" />
+                                <label for="q6-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-7" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>7</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q7-1" name="q7" />
+                                <label for="q7-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q7-2" name="q7" />
+                                <label for="q7-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q7-3" name="q7" />
+                                <label for="q7-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q7-4" name="q7" />
+                                <label for="q7-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-8" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>8</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q8-1" name="q8" />
+                                <label for="q8-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q8-2" name="q8" />
+                                <label for="q8-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q8-3" name="q8" />
+                                <label for="q8-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q8-4" name="q8" />
+                                <label for="q8-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-9" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>9</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q9-1" name="q9" />
+                                <label for="q9-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q9-2" name="q9" />
+                                <label for="q9-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q9-3" name="q9" />
+                                <label for="q9-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q9-4" name="q9" />
+                                <label for="q9-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div id="tab-10" class="tab">
+                          <div class="d-flex flex-column my-5">
+                            <div class="d-flex flex-row">
+                              <span>10</span><span>.</span>
+                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
+                            </div>
+                            <form action="">
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q10-1" name="q10" />
+                                <label for="q10-1">عفاف اجتماعی</label>
+                              </div>
+
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q10-2" name="q10" />
+                                <label for="q10-2">حفاظت از حریم زن</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q10-3" name="q10" />
+                                <label for="q10-3">دستور شارع</label>
+                              </div>
+                              <div class="d-flex gap-2">
+                                <input type="radio" id="q10-4" name="q10" />
+                                <label for="q10-4">همه موارد</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap-v5.3.0/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+
+
+.menu-right{
+    position: fixed;
+    height: 90vh;
+    width: 200px;
+    background-color: #fff7e7;
+    z-index: 3;
+    border-left: 1px solid rgba(111, 111, 111, 0.357);
+}
+
+.menu-right >div{
+    width: 80%;
+    margin: auto;
+}
+
+.menu-right .list-menu-right a {
+    display: inline-flex;
+}
+
+.menu-right .list-menu-right div{
+    margin: 2px;
+}
+
+.menu-right .list-menu-right div h6{
+    margin: 6px;
+    color: #002e4a;
+}
+
+.title-userpanel{
+    border: 1px #00b599 solid;
+}
+
+.new-navbar{
+    margin-top: 100px;
+    margin-right: 200px;
+    height:86px;
+    background-color: #fff7e7;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.357);
+}
+
+.new-navbar div.row{
+    width: 29%;
+    margin: 0 65px;
+}
+
+@media (max-width: 1240px) {
+    .new-navbar div.row{
+        width: 39%;
+    }
+}
+
+.new-navbar div.row .el-odd{
+    margin-top:6px ;
+}
+
+.new-navbar img {
+    font-size: 14px;
+    margin: 12px auto 4px auto;
+}
+
+.new-navbar h6 {
+    font-size: 14px;
+    margin: auto;
+}
+
+.section-containers{
+    margin-right: 200px;
+    
+}
+
+@media (max-width: 960px) {
+    .menu-right {
+        display: none;
+    }
+
+    .menubar-right {
+        display: block !important;
+        padding-top: 25px;
+        padding-right: 8px;
+    }
+
+    .close-right {
+        padding-top: 25px;
+        display: block !important;
+    }
+
+    .close-right i {
+        font-size: 40px;
+    }
+
+    .menubar-right i {
+        font-size: 40px;
+    }
+
+    .new-navbar {
+        margin-right: 0;
+    }
+
+    .new-navbar div.row {
+        width: 50%;
+        margin: auto;
+    }
+
+    .section-containers {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .new-navbar div.row {
+        width: 60%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 490px) {
+    .new-navbar div.row {
+        width: 90%;
+        font-size: 13px;
+    }
+}
+
+.shape1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #00b599;
+    border-radius: 0px 25% 25% 25%;
+    transform: rotate(-45deg);
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+
+.rotateClass {
+    transform: rotate(-135deg) !important;
+}
+
+.shape2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #00b599;
+    border-radius: 0px 50% 50% 50%;
+    transform: rotate(-45deg);
+    height: 28px;
+    width: 28px;
+}
+
+
+.borders-top{
+    width: 280px;
+    margin: 0 30px;
+    border-top: 1px solid #002e4a;
+}

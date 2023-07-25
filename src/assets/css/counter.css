@@ -1,0 +1,24 @@
+.div-counter2 .text1,
+.div-counter2 h6,
+.div-counter2 span {
+    color: rgb(151, 151, 151);
+}
+
+.div-counter2 {
+    border: 1px solid #013c61b2;
+}
+
+.progress {
+    width: 320px;
+    height: 8px;
+}
+
+@media (max-width: 900px) {
+    .progress {
+        width: 200px;
+    }
+
+    .div-counter2 h5 {
+        font-size: 19px;
+    }
+}

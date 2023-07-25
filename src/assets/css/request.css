@@ -1,0 +1,95 @@
+
+
+
+.border-newrequest{
+    margin: 12px 18px;
+    width: 60%;
+    overflow: hidden;
+    background-color:#fff7e7 ;
+    border: 1px solid rgba(99, 99, 99, 0.344);
+}
+
+.head-newrequest{
+    background-color:#dcd8cd ;
+    padding: 10px 25px 4px 25px;
+}
+
+.head-newrequest h5{
+    margin: 0;
+    font-size: 17px;
+    color: #444;
+}
+
+.border-newrequest form{
+    padding: 6px;
+}
+
+.border-newrequest form div{
+    margin: 16px 10px;
+}
+
+.border-newrequest form h6{
+    color: #4e4e4e;
+    margin: 1px 3px;
+}
+
+.border-newrequest form input,
+.border-newrequest form select,
+.border-newrequest form textarea{
+    width: 380px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid rgba(111, 111, 111, 0.357);
+    background-color: #fff;
+}
+
+.border-newrequest form .btn-file{
+    background-color: #fbebca;
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgba(111, 111, 111, 0.357);
+    margin: 3px 35px;
+}
+
+.border-newrequest form button {
+    background-color: #fbebca;
+    border: 1px solid rgba(111, 111, 111, 0.357);
+    margin: 3px 20px;
+}
+
+@media (max-width: 960px) {
+    .border-newrequest {
+        margin: 12px auto;
+        width: 65%;
+    }
+}
+
+@media (max-width: 680px) {
+    .new-navbar div.row {
+        width: 60%;
+        font-size: 13px;
+    }
+
+    .border-newrequest {
+        width: 85%;
+    }
+
+    .border-newrequest form input,
+    .border-newrequest form select,
+    .border-newrequest form textarea {
+        width: 280px;
+    }
+}
+
+@media (max-width: 490px) {
+    .border-newrequest {
+        width: 85%;
+    }
+}
+
+@media (max-width: 490px){ 
+    .new-navbar div.row {
+        width: 90%;
+        font-size: 13px;
+    }
+}

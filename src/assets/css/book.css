@@ -113,6 +113,20 @@ ul li.tab-active li{
 
 }
 
+.icon-percent {
+
+    padding:3px;
+    border-radius:50%;
+    color: white;
+    font-size: 12px;
+    background-color: #dc3545;
+}
+.icon-percent i{
+    display: flex;
+    align-items: center;
+
+}
+
 .section2-store{
     width: 70%;
     margin: auto;

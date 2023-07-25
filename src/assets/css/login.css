@@ -56,6 +56,21 @@
   padding: 3% 0;
   z-index: 20;
 }
+
+.link{
+  display: flex;
+  flex-direction: column;
+}
+
+.link div{
+  display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    text-align: right;
+    float: right;
+    justify-content: start;
+}
+
 .link img {
   width: 30px;
 }
@@ -75,7 +90,18 @@
   top: 20px;
 }
 
-
+.button-login{
+    width: 100%;
+    padding: 0.5rem;
+    padding-top: 0.5rem;
+    border: 1px #dce3e6 solid;
+    border-radius: 13px;
+    background: #00b599;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: 15px;
+}
 
 @media (max-width: 1000px) {
   .containers {

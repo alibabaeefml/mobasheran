@@ -1,20 +1,6 @@
 
 
-
-.border-test {
-    margin: 12px 18px;
-    width: 60%;
-    overflow: hidden;
-    background-color: #fff7e7;
-    border: 1px solid rgba(99, 99, 99, 0.344);
-}
-
-.head-test {
-    background-color: #fff7e7;
-    padding: 10px 25px 4px 25px;
-}
-
-.head-test h5 {
+.head-panel h5 {
     margin: 0;
     font-size: 17px;
     color: #444;
@@ -86,21 +72,21 @@ ul li.tab-active li::after{
 }
 
 @media (max-width: 1200px) {
-    .border-test {
+    .border-panel {
         margin: 12px ;
         width: 70%;
     }
 }
 
 @media (max-width: 960px) {
-    .border-test {
+    .border-panel {
         margin: 12px auto;
         width: 70%;
     }
 }
 
 @media (max-width: 490px) {
-    .border-test {
+    .border-panel {
         width: 90%;
         margin: 12px auto;
     }

@@ -154,3 +154,34 @@
     margin: 0 30px;
     border-top: 1px solid #002e4a;
 }
+
+.border-panel {
+    margin: 12px 18px;
+    width: 60%;
+    overflow: hidden;
+    background-color: #fff7e7;
+    border: 1px solid rgba(99, 99, 99, 0.344);
+}
+
+.head-panel {
+    background-color: #fff7e7;
+    padding: 10px 25px 4px 25px;
+}
+
+.head-panel a {
+    background-color: #fff7e7;
+    border: 1px solid rgba(99, 99, 99, 0.344);
+    font-weight: bold;
+    padding: 2px 10px;
+}
+
+.head-panel h5 {
+    margin: 0;
+    font-size: 17px;
+    color: rgb(62, 62, 62);
+}
+
+.table-panel tr th,
+.table-panel tr td {
+    text-align: center;
+}

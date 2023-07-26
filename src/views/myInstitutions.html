@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مبشران | ثبت درخواست جدید</title>
+    <title>مبشران | موسسات من</title>
     <link
       rel="shortcut icon"
       href="../assets/images/logo.png"
@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../assets/css/app.css" />
     <link rel="stylesheet" href="../assets/css/panel.css" />
-    <link rel="stylesheet" href="../assets/css/request.css" />
+    <link rel="stylesheet" href="../assets/css/myInstitutions.css" />
   </head>
 
   <body>
@@ -273,16 +273,16 @@
           <div class="menubar-right d-none">
             <i class="bi bi-three-dots-vertical text-secondary"></i>
           </div>
-          <div class="row">
+          <div class="row" style="width: 39% !important">
             <div class="col-4 el-odd">
               <div class="d-flex justify-content-center flex-column mx-auto">
                 <img
                   width="33"
                   height="33"
-                  src="../assets/images/lessonsGreen.png"
+                  src="../assets/images/myInstitutions.png"
                   alt=""
                 />
-                <h6 class="fw-bold">دروس مبشران</h6>
+                <h6 class="fw-bold">همه موسسات</h6>
               </div>
             </div>
 
@@ -291,10 +291,10 @@
                 <img
                   width="40"
                   height="40"
-                  src="../assets/images/lessonsGreen.png"
+                  src="../assets/images/myInstitutions.png"
                   alt=""
                 />
-                <h6 class="fw-bold">دروس مبشران</h6>
+                <h6 class="fw-bold">موسسات ثبت شده من</h6>
               </div>
             </div>
 
@@ -303,10 +303,10 @@
                 <img
                   width="33"
                   height="33"
-                  src="../assets/images/lessonsGreen.png"
+                  src="../assets/images/myInstitutions.png"
                   alt=""
                 />
-                <h6 class="fw-bold">دروس مبشران</h6>
+                <h6 class="fw-bold">موسسات منتخب من</h6>
               </div>
             </div>
           </div>
@@ -315,36 +315,50 @@
 
       <section>
         <div class="section-containers">
-          <div class="border-panel rounded-4">
-            <div class="head-panel">
-              <div class="d-flex flex-row">
-                <img src="../" alt="" />
-                <h5 class="fw-bold">ثبت درخواست جدید</h5>
+          <div class="border-panel rounded-4" style="width: 75% !important">
+            <div class="head-panel pb-2">
+              <div class="d-flex flex-row justify-content-between">
+                <h5 class="fw-bold pt-1">موسسات فرهنگی من</h5>
+
+                <a
+                  class="bg-success text-light rounded-2 py-1"
+                  href="newrequest.html"
+                  >ثبت موسسه جدید</a
+                >
               </div>
             </div>
-            <div class="">
-              <form action="" class="flex flex-column">
-                <div>
-                  <h6>عنوان درخواست:</h6>
-                  <input type="text" name="" id="" />
-                </div>
-                <div>
-                  <h6>دسته بندی:</h6>
-                  <select name="" id=""></select>
-                </div>
-                <div>
-                  <h6>متن درخواست:</h6>
-                  <textarea name="" id="" cols="20" rows="3"></textarea>
-                </div>
-                <div>
-                  <h6>فایل ضمیمه:</h6>
-                  <label for="upload_file" class="btn btn-file"> </label>
-                  <input type="file" id="upload_file" style="display: none" />
-                </div>
-                <div>
-                  <button class="btn">ارسال درخواست</button>
-                </div>
-              </form>
+            <div class="table-panel">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>شناسه موسسه</th>
+                    <th>عنوان</th>
+                    <th>وضعیت تایید محتوا</th>
+                    <th>صفحه ی موسسه</th>
+                    <th>محتوا</th>
+                    <th>ویرایش اطلاعات موسسه</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3561</td>
+                    <td>موسسه کاظم</td>
+                    <td>تایید شده ولی ته ندارد</td>
+                    <td>@kazem</td>
+                    <td>محتوا</td>
+                    <td>ویرایش اطلاعات موسسه</td>
+                  </tr>
+
+                  <tr>
+                    <td>3561</td>
+                    <td>موسسه کاظم</td>
+                    <td>تایید شده ولی ته ندارد</td>
+                    <td>@kazem</td>
+                    <td>محتوا</td>
+                    <td>ویرایش اطلاعات موسسه</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

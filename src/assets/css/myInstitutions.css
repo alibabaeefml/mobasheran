@@ -1,15 +1,19 @@
 
+.new-navbar{
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 15px; 
+}
 
 .table-panel tr {
-    
-    display:block;
     background-color: transparent;
     --bs-table-bg:none;
-    margin: 5px;
-    overflow: hidden;
-
-    border: 1px solid rgb(76, 76, 76) ;
-    border-radius: 10px;
+    border: 1px solid rgb(76, 76, 76) !important;
+    border-radius: 10px !important;
 }
 
 .table-panel tr td,

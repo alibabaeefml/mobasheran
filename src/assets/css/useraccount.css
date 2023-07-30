@@ -1,0 +1,29 @@
+
+
+.head-panel{
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+form{
+    margin: 15px 60px;
+}
+
+form h6{
+    margin: 0;
+}
+
+.edit-user input{
+    width: 210px;
+}
+
+.part2-edit-user input{
+    width: 179px;
+}
+
+.part2-edit-user .hbd-edit-user input{
+    width: 80px;
+}
+
+.btn-edit-user{
+    color: white;
+}

@@ -1,6 +1,26 @@
 
+:root {
+    --primary: #002e4a;
+    --secondary: #00b599;
+    --secondary-1: #ffc148;
+    --gray: rgb(76, 76, 76);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.font-small{
+    font-size: 14px;
+}
+
 .section-containers>div {
     width: 75%;
+    overflow-x: auto;
+}
+
+.containers2>div {
+    width: 90%;
     overflow-x: auto;
 }
 
@@ -17,18 +37,75 @@
 .list-panel ul {
     background-color: transparent;
     --bs-table-bg:none;
-    border: 1px solid rgb(76, 76, 76);
+    border: 1px solid var(--gray);
     border-radius: 10px;
     margin: 5px 15px ;
     background-color: rgb(255, 253, 230);
     width: 833px;
     height: 46px;
-    
+
 }
 .list-panel ul li{
     text-align: center;
     width: 110px;
     margin: 10px 5px;
+}
+
+.parts-list-institutes{
+    width: 38%;
+}
+
+.part1-list-institutes,
+.part2-list-institutes{
+    
+    border: 1px solid rgba(99, 99, 99, 0.344);
+}
+
+.img-bart2-banner{
+    margin:0 10px;
+    overflow: hidden;
+    border: 1px solid rgba(99, 99, 99, 0.344);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1160px){ 
+    
+    .border-panel>div{
+        flex-direction: column-reverse !important;
+    }
+    
+    
+    .part1-list-institutes,
+    .part2-list-institutes {
+        height: 200px;
+        width: 50%;
+    }
+
+        .parts-list-institutes {
+            width: 100%;
+            flex-direction: row !important;
+            margin:0 10px;
+            gap:6px
+            
+    }
+}
+
+@media (max-width: 745px) {
+
+    .parts-list-institutes {
+        width: 100%;
+        flex-direction: column !important;
+        margin: 0 10px;
+        
+    }
+
+.part1-list-institutes,
+.part2-list-institutes {
+
+    width: 100%;
+}
 }
 
 @media (max-width: 960px) {
@@ -50,6 +127,6 @@
     }
 
     .new-navbar div.row {
-        width: 80%;
+        width: 100%;
     }
 }

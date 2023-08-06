@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مبشران | موسسات من</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap-v5.3.0/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/panel.css" />
+    <link rel="stylesheet" href="../assets/css/useraccount.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div
+      class="w-100 position-fixed top-0 start-0"
+      style="z-index: 30"
+      style="z-index: 30"
+    >
+      <header
+        class="d-flex align-items-center justify-content-between container-xxl mx-auto bg-primary rounded-3"
+        id="header"
+        data-aos="fade-up"
+      >
+        <div class="d-flex align-items-end gap-5">
+          <div class="logo-container" data-aos="fade-left">
+            <a href="">
+              <img
+                width="120"
+                src="../assets/images/logo.png"
+                alt="لوگو مبشران"
+              />
+            </a>
+          </div>
+          <div class="menu-container" data-aos="fade-up">
+            <ul
+              class="menu-list d-lg-flex d-none align-items-center gap-5 text-secondary"
+            >
+              <li class="menu-item">
+                <a href="./index.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/home.png"
+                    alt="home-icon"
+                  />
+                  <span class="menu-item-text">صفحه اصلی</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./courses.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/courses.png"
+                    alt="courses-icon"
+                  />
+                  <span class="menu-item-text">دوره ها</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./lessons.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/lessons.png"
+                    alt="lessons-icon"
+                  />
+                  <span class="menu-item-text">دروس</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./institutes.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/institutes.png"
+                    alt="institute-icon"
+                  />
+                  <span class="menu-item-text">موسسات</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="./atlas.html" class="menu-item-link">
+                  <img
+                    class="menu-item-icon"
+                    src="../assets/images/atlas.png"
+                    alt="atlas-icon"
+                  />
+                  <span class="menu-item-text">اطلس آموزش</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          data-aos="fade-right"
+          class="auth-links-container d-lg-flex d-none text-center gap-2"
+        >
+          <a class="link-panel rounded-circle" href="signup.html"
+            ><div class="mt-1 px-2">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+          </a>
+          <a class="link-panel rounded-circle" href="login.html"
+            ><div class="mt-1 px-2">
+              <i class="bi bi-arrow-bar-left"></i>
+            </div>
+          </a>
+        </div>
+        <div class="d-block d-lg-none">
+          <button class="btn btn-secondary" id="open_sidebar_btn">
+            <i class="bi-layout-sidebar-inset-reverse"></i>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <div class="main container-xxl p-0 w-100 mb-4">
+      <!-- sidebar -->
+      <section id="sidebar" class="w-100 h-100 fixed-top" style="right: -100%">
+        <div
+          class="w-50 bg-primary border-end border-3 border-secondary-1 menu-container h-100 position-relative"
+        >
+          <button
+            id="close_sidebar_btn"
+            class="btn btn-secondary p-0 position-absolute end-0 m-3 fs-3"
+            style="width: 30px; height: 30px"
+          >
+            <i class="bi-x"></i>
+          </button>
+          <ul
+            class="menu-list h-100 ps-5 d-flex flex-column justify-content-center gap-5 text-secondary"
+          >
+            <li class="menu-item">
+              <a href="./index.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/home.png"
+                  alt="home-icon"
+                />
+                <span class="menu-item-text">صفحه اصلی</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./courses.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/courses.png"
+                  alt="courses-icon"
+                />
+                <span class="menu-item-text">دوره ها</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./lessons.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/lessons.png"
+                  alt="lessons-icon"
+                />
+                <span class="menu-item-text">دروس</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./institutes.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/institutes.png"
+                  alt="institute-icon"
+                />
+                <span class="menu-item-text">موسسات</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./atlas.html" class="menu-item-link">
+                <img
+                  class="menu-item-icon"
+                  src="../assets/images/atlas.png"
+                  alt="atlas-icon"
+                />
+                <span class="menu-item-text">اطلس آموزش</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./signin.html" class="menu-item-link">
+                <i class="bi-person text-secondary-1"></i>
+                <span class="menu-item-text">ورود</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="./signup.html" class="menu-item-link">
+                <i class="bi-person text-secondary-1"></i>
+                <span class="menu-item-text">ثبت نام</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="menu-right">
+        <div class="close-right d-none">
+          <i class="bi bi-x text-secondary"></i>
+        </div>
+        <div class="flex flex-column list-menu-right">
+          <div class="title-userpanel d-flex flex-row my-3 bg-light rounded-5">
+            <h6>حسین پورعسگری</h6>
+            <img
+              style="margin-top: 5px"
+              class="rounded-circle"
+              width="30"
+              height="30"
+              src="../assets/images/user.png"
+              alt=""
+            />
+          </div>
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>آموزش های من</h6>
+            </div>
+          </a>
+          <a href="myInstitutions.html">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>موسسات من</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>کتابخانه من</h6>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape1"></div>
+              <h6 class="fw-bold">حساب کاربری</h6>
+            </div>
+          </a>
+
+          <a href="request.html">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>درخواست ها</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="d-flex flex-row">
+              <div class="shape2"></div>
+              <h6>خروج</h6>
+            </div>
+          </a>
+          <div class="mt-5">
+            <img width="75" src="../assets/images/bg-new.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="new-navbar">
+        <div class="d-flex flex-row">
+          <div class="menubar-right d-none">
+            <i class="bi bi-three-dots-vertical text-secondary"></i>
+          </div>
+          <div class="d-flex flex-row menu-user-account">
+            <div class="tabs w-100">
+              <div class="part-end-course tabs-nav position-relative">
+                <button
+                  class="position-absolute left-0 next-slide-useraccount border-0"
+                >
+                  <i class="bi bi-caret-left-fill"></i>
+                </button>
+
+                <ul class="tabs">
+                  <swiper-container
+                    id="sw-user-account"
+                    navigation-next-el=".next-slide-useraccount"
+                    grid-rows="1"
+                  >
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab active" data-tab="1">
+                        <a>اطلاعات شخصی</a>
+                      </li>
+                    </swiper-slide>
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="2">
+                        <a>عکس پروفایل</a>
+                      </li>
+                    </swiper-slide>
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="7">
+                        <a> سوابق تحصیلی حوزه</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="8">
+                        <a>سوابق تحصیلی دانشگاه</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="3">
+                        <a>سوابق پژوهشی</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="4">
+                        <a>سوابق تدریس</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="5">
+                        <a>سوابق شرکت دردوره</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="6">
+                        <a>سوابق برگذاری دوره</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="9">
+                        <a>سوابق سخنرانی</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="10">
+                        <a>سوابق مشاوره</a>
+                      </li>
+                    </swiper-slide>
+
+                    <swiper-slide class="sw-tab-useraccount">
+                      <li class="tab" data-tab="11">
+                        <a>سوابق تبلیغ</a>
+                      </li>
+                    </swiper-slide>
+                  </swiper-container>
+                </ul>
+              </div>
+
+              <div class="tab-content mt-5">
+                <div class="content active border-panel" data-tab="1">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">تنظیمات حساب کاربری</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-row edit-user gap-3">
+                        <div>
+                          <h6>کد ملی:</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>نام :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>نام خانوادگی:</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                      </div>
+
+                      <div class="my-3 d-flex flex-row part2-edit-user gap-3">
+                        <div>
+                          <h6>شماره همراه:</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>نام پدر :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div class="hbd-edit-user">
+                          <h6>روز تولد :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                        <div class="hbd-edit-user">
+                          <h6>ماه تولد :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div class="hbd-edit-user">
+                          <h6>سال تولد :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                      </div>
+
+                      <div class="my-3 d-flex flex-row edit-user gap-3">
+                        <div>
+                          <h6>آدرس :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>استان :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>شهر محل سکونت :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                      </div>
+
+                      <div class="my-3 d-flex flex-row edit-user gap-3">
+                        <div>
+                          <h6>تلفن تماس :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>نام و نام خانوادگی همسر :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>کد ملی همسر :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                      </div>
+
+                      <div class="my-3 d-flex flex-row edit-user gap-3">
+                        <div>
+                          <h6>تحصیلات همسر :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>تلفن تماس همسر :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت اطلاعات
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="2">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">ویرایش تصویر کاربری</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <img
+                            style="border: 1px solid white"
+                            width="260"
+                            src="../assets/images/user.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <label for="file" style="cursor: pointer">
+                            <span>آپلود عکس</span>
+                            <i class="bi bi-upload"></i>
+
+                            <input class="d-none" type="file" id="file" />
+                          </label>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                          <button
+                            class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                          >
+                            ثبت
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="3">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه پژوهشی</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>نوع:</h6>
+                          <select name="" id="">
+                            <option value="">کتاب</option>
+                            <option value="">مقاله</option>
+                          </select>
+                        </div>
+
+                        <div>
+                          <h6>عنوان پژوهش :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>سال تالیف :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1300"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="content border-panel" data-tab="4">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه تدریس</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>عنوان:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>محل تدریس:</h6>
+                          <input type="text" />
+                        </div>
+
+                        <div>
+                          <h6>واحد :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                        <div>
+                          <h6>سال :</h6>
+                          <input type="text" />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="5">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه شرکت در دوره</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>عنوان:</h6>
+                          <input type="text" />
+                        </div>
+
+                        <div>
+                          <h6>محل برگذاری دوره:</h6>
+                          <input type="text" />
+                        </div>
+
+                        <div>
+                          <h6>مجموع ساعات :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                        <div>
+                          <h6>سال :</h6>
+                          <input type="text" />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="6">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه برگذاری دوره</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>عنوان:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>برگذارکننده دوره:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>مجموع ساعات :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                        <div>
+                          <h6>سال :</h6>
+                          <input type="text" />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="7">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه تحصیلی حوزه</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>استان:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>حوزه:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>سال فارق التحصیلی :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                        <div>
+                          <h6>سطح :</h6>
+                          <input type="text" />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="8">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه تحصیلی دانشگاه</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>استان:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>دانشگاه:</h6>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <h6>سال فارق التحصیلی :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                        <div>
+                          <h6>مقطع :</h6>
+                          <select>
+                            <option value="">دیپلم</option>
+                            <option value="">فوق دیپلم</option>
+                            <option value="">کارشناسی</option>
+                            <option value="">کارشناسی ارشد</option>
+                            <option value="">دکتری</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="9">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه سخنرانی</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>عنوان :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>مجموع ساعات :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+
+                        <div>
+                          <h6>سال :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1300"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="10">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه سخنرانی</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>عنوان :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>مجموع ساعات :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+
+                        <div>
+                          <h6>نوع :</h6>
+                          <select name="" id="">
+                            <option value="">غیر رسمی</option>
+                            <option value="">رسمی</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="content border-panel" data-tab="11">
+                  <div class="head-panel pb-2">
+                    <div class="d-flex">
+                      <h5 class="fw-bold pt-1">افزودن سابقه تبلیغ</h5>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h6 class="text-primary m-3">
+                      در صورت مغایرت در اطلاعات زیر لطفا آنها را ویرایش کنید
+                    </h6>
+                    <form action="" class="flex flex-column">
+                      <div class="my-3 d-flex flex-column edit-user gap-3">
+                        <div>
+                          <h6>استان محل تبلیغ :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>شهر محل تبلیغ :</h6>
+                          <input type="text" name="" id="" />
+                        </div>
+
+                        <div>
+                          <h6>مدت زمان(سال) :</h6>
+                          <input
+                            style="direction: rtl"
+                            type="number"
+                            min="1"
+                            name=""
+                            id=""
+                          />
+                        </div>
+
+                        <div>
+                          <h6>سازمان اعزام کننده :</h6>
+                          <select name="" id="">
+                            <option value="">دفتر تبلیغات اسلامی</option>
+                            <option value="">سازمان تبلیغات اسلامی</option>
+                            <option value="">سازمان اوقاف</option>
+                            <option value="">گروه های تبلیغی</option>
+                            <option value="">گروه های جهادی</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          class="btn my-2 rounded-3 btn-edit-user bg-secondary fw-bold"
+                        >
+                          ثبت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap-v5.3.0/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/swiper-element-v9.4.1/swiper-element-bundle.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+      // swiper element
+      const swiperEl = document.querySelector("#sw-user-account");
+
+      // swiper parameters
+      const swiperParam = {
+        slidesPerView: 1,
+        breakpoints: {
+          260: {
+            slidesPerView: 2.5,
+          },
+          710: {
+            slidesPerView: 4.5,
+          },
+          1024: {
+            slidesPerView: 6.5,
+          },
+          1300: {
+            slidesPerView: 8.5,
+          },
+        },
+        on: {
+          init() {
+            // ...
+          },
+        },
+      };
+
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl, swiperParam);
+
+      // and now initialize it
+      swiperEl.initialize();
+    </script>
+  </body>
+</html>

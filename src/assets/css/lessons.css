@@ -34,29 +34,6 @@
     font-size: 14px;
 }
 
-.rate input[type="radio"] {
-    opacity: 0;
-}
-
-.rate input[type="radio"] {
-    cursor: pointer;
-}
-
-.rate label:before {
-    content: '★ ';
-    margin: -16px;
-    font-size: 16px;
-    color: #bfbeb8;
-}
-
-.rate input[type="radio"]:checked~label::before {
-    color: #ffc148;
-}
-
-.rate input[type="radio"]:hover~label::before {
-    color: gold;
-}
-
 @media (max-width: 576px) {
     
     .section2-course>div {

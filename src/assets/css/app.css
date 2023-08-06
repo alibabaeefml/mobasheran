@@ -2,6 +2,7 @@
   --primary: #002e4a;
   --secondary: #00b599;
   --secondary-1: #ffc148;
+  --gray:rgb(76, 76, 76);
 }
 
 @font-face {
@@ -31,6 +32,10 @@
 
 .text-secondary-1 {
   color: var(--secondary-1) !important;
+}
+
+.text-gray {
+  color: var(--gray);
 }
 
 .btn-secondary,
@@ -281,6 +286,29 @@ input:focus {
   color: var(--secondary);
   font-weight: bold;
   margin-top: 16px;
+}
+
+.rate input[type="radio"] {
+  opacity: 0;
+}
+
+.rate input[type="radio"] {
+  cursor: pointer;
+}
+
+.rate label:before {
+  content: '★ ';
+  margin: -16px;
+  font-size: 16px;
+  color: #bfbeb8;
+}
+
+.rate input[type="radio"]:checked~label::before {
+  color: #ffc148;
+}
+
+.rate input[type="radio"]:hover~label::before {
+  color: gold;
 }
 
 @media (max-width: 900px) {

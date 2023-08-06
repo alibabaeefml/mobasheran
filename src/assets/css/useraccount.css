@@ -1,15 +1,67 @@
 
 
+.new-navbar h6 {
+    margin: 0;
+}
+
+.border-panel{
+    width: 78%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
 .head-panel{
     border-bottom: 1px solid rgb(56, 56, 56);
 }
 
+.menu-user-account{
+    width: 88%;
+    margin: 50px auto;
+}
+
+.next-slide-useraccount{
+    left: -30px;
+    z-index: 2;
+    text-align: center;
+    color: rgb(101, 101, 101);
+    background-color: transparent;
+}
+
+.sw-tab-useraccount{
+    text-align: center;
+}
+
+.tabs li{
+    cursor: pointer;
+}
+
+.tabs li a{
+    font-size: 13px;
+    margin: auto;
+}
+
+
+.content {
+    display: none;
+}
+
 form{
+    overflow-x: auto;
     margin: 15px 60px;
 }
 
 form h6{
     margin: 0;
+}
+
+.border-panel select{
+    width: 210px;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px #dce3e6 solid;
+    border-radius: 13px;
+
 }
 
 .edit-user input{
@@ -26,4 +78,20 @@ form h6{
 
 .btn-edit-user{
     color: white;
+}
+
+
+@media (max-width: 960px) {
+    .border-panel{
+        margin:12px auto;
+    }
+    .menu-user-account {
+        width: 78%;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-user-account {
+        width: 88%;
+    }
 }

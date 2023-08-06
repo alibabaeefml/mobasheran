@@ -1,4 +1,13 @@
+:root {
+    --primary: #002e4a;
+    --secondary: #00b599;
+    --secondary-1: #ffc148;
+    --gray: rgb(76, 76, 76);
+}
 
+.text-gray {
+    color: var(--gray);
+}
 
 .menu-right{
     position: fixed;
@@ -24,11 +33,11 @@
 
 .menu-right .list-menu-right div h6{
     margin: 6px;
-    color: #002e4a;
+    color: var(--primary);
 }
 
 .title-userpanel{
-    border: 1px #00b599 solid;
+    border: 1px var(--secondary) solid;
 }
 
 .new-navbar{
@@ -87,10 +96,12 @@
 
     .close-right i {
         font-size: 40px;
+        cursor: pointer;
     }
 
     .menubar-right i {
         font-size: 40px;
+        cursor: pointer;
     }
 
     .new-navbar {
@@ -125,7 +136,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    border: 2px solid #00b599;
+    border: 2px solid var(--secondary);
     border-radius: 0px 25% 25% 25%;
     transform: rotate(-45deg);
     height: 28px;
@@ -141,7 +152,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    border: 2px solid #00b599;
+    border: 2px solid var(--secondary);
     border-radius: 0px 50% 50% 50%;
     transform: rotate(-45deg);
     height: 28px;
@@ -152,7 +163,7 @@
 .borders-top{
     width: 280px;
     margin: 0 30px;
-    border-top: 1px solid #002e4a;
+    border-top: 1px solid var(--primary);
 }
 
 .border-panel {

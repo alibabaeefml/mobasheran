@@ -76,43 +76,60 @@ $(".list-tab .shape1").each(function(){
 //tab list page useraccount
 
 $(document).ready(function() {
-    // تابعی برای تغییر تب و محتوای مربوطه
     function changeTab(tab) {
-        // حذف کلاس active از تب ها و محتواها
+    
         $('.tab').removeClass('active');
         $('.content').removeClass('active');
 
-        // اضافه کردن کلاس active به تب و محتوای مربوطه
         $(tab).addClass('active');
         $('.content[data-tab="' + $(tab).data('tab') + '"]').addClass('active');
     }
 
-    // تغییر تب با کلیک بر روی آن
     $('.tab').click(function() {
         changeTab(this);
     });
 
-    // تغییر تب با استفاده از کلیدهای تب
     $(document).keydown(function(e) {
-        if (e.which === 9) { // کلید Tab فشرده شده است
-            e.preventDefault(); // جلوگیری از عملکرد پیش فرض کلید Tab
-
-            var currentTab = $('.tab.active'); // تب فعلی
+        if (e.which === 9) {
+            e.preventDefault();
+            var currentTab = $('.tab.active');
             var nextTab;
 
-            if (e.shiftKey) { // کلید Shift همزمان با کلید Tab فشرده شده است
-                nextTab = currentTab.prev('.tab'); // تب قبلی
+            if (e.shiftKey) { 
+                nextTab = currentTab.prev('.tab'); 
             } else {
-                nextTab = currentTab.next('.tab'); // تب بعدی
+                nextTab = currentTab.next('.tab'); 
             }
-
-            if (nextTab.length === 0) { // در صورتی که تب بعدی وجود نداشته باشد، به اولین تب برگرد
+            if (nextTab.length === 0) {  
                 nextTab = $('.tab:first');
             }
-
             changeTab(nextTab);
         }
     });
 });
+
+//change tab in page test
+    var index=0;
+    $('.bi-caret-left-fill').click(function() {
+        var currentTab=$(".tab-active");
+        var nexTab=currentTab.next('.tab-test')
+        var currentlist=$(".active");
+        var nexlist=currentlist.next('.tabz')
+
+
+        if(nexTab){
+        currentTab.toggleClass( "tab-active" );
+        nexTab.toggleClass( "tab-active" );
+
+        currentlist.removeClass( "active" );
+        nexlist.toggleClass( "active" );
+        currentlist.css( 'display','none' );
+        nexlist.css( 'display','block' );
+        
+    }
+
+
+    });
+
 
 

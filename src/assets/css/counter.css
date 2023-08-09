@@ -13,6 +13,7 @@
     height: 8px;
 }
 
+
 @media (max-width: 900px) {
     .progress {
         width: 200px;

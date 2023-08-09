@@ -223,42 +223,42 @@
               alt=""
             />
           </div>
-          <a href="#">
+          <a href="counter.html">
             <div class="d-flex flex-row">
-              <div class="shape1"></div>
+              <div class="shape1 shapes"></div>
               <h6 class="fw-bold">آموزش های من</h6>
             </div>
           </a>
-          <a href="#">
+          <a href="institutes.html">
             <div class="d-flex flex-row">
-              <div class="shape2"></div>
+              <div class="shape2 shapes"></div>
               <h6>موسسات من</h6>
             </div>
           </a>
 
           <a href="#">
             <div class="d-flex flex-row">
-              <div class="shape2"></div>
+              <div class="shape2 shapes"></div>
               <h6>کتابخانه من</h6>
             </div>
           </a>
 
-          <a href="#">
+          <a href="useraccount.html">
             <div class="d-flex flex-row">
-              <div class="shape2"></div>
+              <div class="shape2 shapes"></div>
               <h6>حساب کاربری</h6>
             </div>
           </a>
 
           <a href="request.html">
             <div class="d-flex flex-row">
-              <div class="shape2"></div>
+              <div class="shape2 shapes"></div>
               <h6>درخواست ها</h6>
             </div>
           </a>
           <a href="#">
             <div class="d-flex flex-row">
-              <div class="shape2"></div>
+              <div class="shape2 shapes"></div>
               <h6>خروج</h6>
             </div>
           </a>
@@ -275,39 +275,33 @@
           </div>
           <div class="row">
             <div class="col-4 el-odd">
-              <div class="d-flex justify-content-center flex-column mx-auto">
+              <a
+                href="course.html"
+                class="d-flex justify-content-center flex-column mx-auto"
+              >
                 <img
                   width="33"
                   height="33"
-                  src="../assets/images/lessonsGreen.png"
+                  src="../assets/images/coursesGreen.png"
                   alt=""
                 />
-                <h6 class="fw-bold">دروس مبشران</h6>
-              </div>
+                <h6 class="fw-bold">دوره ها</h6>
+              </a>
             </div>
 
             <div class="col-4">
-              <div class="d-flex justify-content-center flex-column mx-auto">
+              <a
+                href="counter.html"
+                class="d-flex justify-content-center flex-column mx-auto"
+              >
                 <img
                   width="40"
                   height="40"
                   src="../assets/images/lessonsGreen.png"
                   alt=""
                 />
-                <h6 class="fw-bold">دروس مبشران</h6>
-              </div>
-            </div>
-
-            <div class="col-4 el-odd">
-              <div class="d-flex justify-content-center flex-column mx-auto">
-                <img
-                  width="33"
-                  height="33"
-                  src="../assets/images/lessonsGreen.png"
-                  alt=""
-                />
-                <h6 class="fw-bold">دروس مبشران</h6>
-              </div>
+                <h6 class="fw-bold">دروس</h6>
+              </a>
             </div>
           </div>
         </div>
@@ -324,338 +318,420 @@
               <div class="d-flex flex-row my-2">
                 <i class="bi bi-clock-history" style="font-size: 19px"></i>
                 <h5 class="fw-bold mx-1">زمان باقی مانده:</h5>
-                <h6 class="fw-bold text-secondary-1">10:53</h6>
+                <div
+                  dir="ltr"
+                  class="timer-box timer d-flex flex-row gap-2 pb-3 fw-bold text-secondary-1"
+                  data-minutes-left="10"
+                ></div>
               </div>
             </div>
             <div class="contain-test h-50">
               <div class="title-test">
                 <div class="d-flex flex-row">
                   <div class="mx-4"><h6 class="fw-bold">سوال ها</h6></div>
-                  <div class="">
-                    <div class="tabs">
-                      <ul class="tabs-nav d-flex flex-row flex-wrap gap-3">
-                        <li class="tab-test">
-                          <a href="#tab-1">1</a>
-                        </li>
-                        <li class="tab-test">
-                          <a href="#tab-2">2</a>
-                        </li>
+                  <div class="tabs">
+                    <ul class="tabs-nav tabs d-flex flex-row flex-wrap gap-3">
+                      <li class="tab-test active" data-tab="1">
+                        <a>1</a>
+                      </li>
+                      <li class="tab-test" data-tab="2">
+                        <a>2</a>
+                      </li>
 
-                        <li class="tab-test">
-                          <a href="#tab-3">3</a>
-                        </li>
-                        <li class="tab-test">
-                          <a href="#tab-4">4</a>
-                        </li>
+                      <li class="tab-test" data-tab="3">
+                        <a>3</a>
+                      </li>
+                      <li class="tab-test" data-tab="4">
+                        <a>4</a>
+                      </li>
 
-                        <li class="tab-test">
-                          <a href="#tab-5">5</a>
-                        </li>
-                        <li class="tab-test">
-                          <a href="#tab-6">6</a>
-                        </li>
+                      <li class="tab-test" data-tab="5">
+                        <a>5</a>
+                      </li>
+                      <li class="tab-test" data-tab="6">
+                        <a>6</a>
+                      </li>
 
-                        <li class="tab-test">
-                          <a href="#tab-7">7</a>
-                        </li>
-                        <li class="tab-test">
-                          <a class="tab-test" href="#tab-8">8</a>
-                        </li>
-                        <li class="tab-test">
-                          <a class="tab-test" href="#tab-9">9</a>
-                        </li>
-                        <li class="tab-test">
-                          <a href="#tab-10">10</a>
-                        </li>
-                      </ul>
-                      <div class="tabs-stage">
-                        <div id="tab-1" class="tabz active">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>1</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q1-1" name="q1" />
-                                <label for="q1-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q1-2" name="q1" />
-                                <label for="q1-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q1-3" name="q1" />
-                                <label for="q1-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q1-4" name="q1" />
-                                <label for="q1-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <li class="tab-test" data-tab="7">
+                        <a>7</a>
+                      </li>
+                      <li class="tab-test" data-tab="8">
+                        <a>8</a>
+                      </li>
+                      <li class="tab-test" data-tab="9">
+                        <a>9</a>
+                      </li>
+                      <li class="tab-test" data-tab="10">
+                        <a>10</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div data-tab="1" class="content-test active">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>1</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q1-1" name="q1" />
+                              <label for="q1-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q1-2" name="q1" />
+                              <label for="q1-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q1-3" name="q1" />
+                              <label for="q1-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q1-4" name="q1" />
+                              <label for="q1-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
-                        <div id="tab-2" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>2</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q2-1" name="q2" />
-                                <label for="q2-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q2-2" name="q2" />
-                                <label for="q2-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q2-3" name="q2" />
-                                <label for="q2-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q2-4" name="q2" />
-                                <label for="q2-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      </div>
+                      <div data-tab="2" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>2</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q2-1" name="q2" />
+                              <label for="q2-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q2-2" name="q2" />
+                              <label for="q2-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q2-3" name="q2" />
+                              <label for="q2-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q2-4" name="q2" />
+                              <label for="q2-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-3" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>3</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q3-1" name="q3" />
-                                <label for="q3-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q3-2" name="q3" />
-                                <label for="q3-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q3-3" name="q3" />
-                                <label for="q3-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q3-4" name="q3" />
-                                <label for="q3-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="3" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>3</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q3-1" name="q3" />
+                              <label for="q3-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q3-2" name="q3" />
+                              <label for="q3-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q3-3" name="q3" />
+                              <label for="q3-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q3-4" name="q3" />
+                              <label for="q3-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-4" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>4</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q4-1" name="q4" />
-                                <label for="q4-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q4-2" name="q4" />
-                                <label for="q4-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q4-3" name="q4" />
-                                <label for="q4-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q4-4" name="q4" />
-                                <label for="q4-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="4" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>4</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q4-1" name="q4" />
+                              <label for="q4-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q4-2" name="q4" />
+                              <label for="q4-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q4-3" name="q4" />
+                              <label for="q4-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q4-4" name="q4" />
+                              <label for="q4-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-5" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>5</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q5-1" name="q5" />
-                                <label for="q5-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q5-2" name="q5" />
-                                <label for="q5-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q5-3" name="q5" />
-                                <label for="q5-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q5-4" name="q5" />
-                                <label for="q5-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="5" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>5</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q5-1" name="q5" />
+                              <label for="q5-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q5-2" name="q5" />
+                              <label for="q5-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q5-3" name="q5" />
+                              <label for="q5-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q5-4" name="q5" />
+                              <label for="q5-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-6" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>6</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q6-1" name="q6" />
-                                <label for="q6-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q6-2" name="q6" />
-                                <label for="q6-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q6-3" name="q6" />
-                                <label for="q6-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q6-4" name="q6" />
-                                <label for="q6-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="6" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>6</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q6-1" name="q6" />
+                              <label for="q6-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q6-2" name="q6" />
+                              <label for="q6-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q6-3" name="q6" />
+                              <label for="q6-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q6-4" name="q6" />
+                              <label for="q6-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-7" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>7</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q7-1" name="q7" />
-                                <label for="q7-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q7-2" name="q7" />
-                                <label for="q7-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q7-3" name="q7" />
-                                <label for="q7-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q7-4" name="q7" />
-                                <label for="q7-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="7" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>7</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q7-1" name="q7" />
+                              <label for="q7-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q7-2" name="q7" />
+                              <label for="q7-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q7-3" name="q7" />
+                              <label for="q7-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q7-4" name="q7" />
+                              <label for="q7-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-8" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>8</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q8-1" name="q8" />
-                                <label for="q8-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q8-2" name="q8" />
-                                <label for="q8-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q8-3" name="q8" />
-                                <label for="q8-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q8-4" name="q8" />
-                                <label for="q8-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="8" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>8</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q8-1" name="q8" />
+                              <label for="q8-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q8-2" name="q8" />
+                              <label for="q8-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q8-3" name="q8" />
+                              <label for="q8-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q8-4" name="q8" />
+                              <label for="q8-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-9" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>9</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q9-1" name="q9" />
-                                <label for="q9-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q9-2" name="q9" />
-                                <label for="q9-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q9-3" name="q9" />
-                                <label for="q9-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q9-4" name="q9" />
-                                <label for="q9-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="9" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>9</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q9-1" name="q9" />
+                              <label for="q9-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q9-2" name="q9" />
+                              <label for="q9-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q9-3" name="q9" />
+                              <label for="q9-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q9-4" name="q9" />
+                              <label for="q9-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
+                      </div>
 
-                        <div id="tab-10" class="tabz">
-                          <div class="d-flex flex-column my-5">
-                            <div class="d-flex flex-row">
-                              <span>10</span><span>.</span>
-                              <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
-                            </div>
-                            <form action="">
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q10-1" name="q10" />
-                                <label for="q10-1">عفاف اجتماعی</label>
-                              </div>
-
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q10-2" name="q10" />
-                                <label for="q10-2">حفاظت از حریم زن</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q10-3" name="q10" />
-                                <label for="q10-3">دستور شارع</label>
-                              </div>
-                              <div class="d-flex gap-2">
-                                <input type="radio" id="q10-4" name="q10" />
-                                <label for="q10-4">همه موارد</label>
-                              </div>
-                              <i class="bi bi-caret-left-fill"></i>
-                            </form>
+                      <div data-tab="10" class="content-test d-none">
+                        <div class="d-flex flex-column my-5">
+                          <div class="d-flex flex-row">
+                            <span>10</span><span>.</span>
+                            <h5 class="fw-bold mx-1">فلسفه حجاب چیست؟</h5>
                           </div>
+                          <form action="">
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q10-1" name="q10" />
+                              <label for="q10-1">عفاف اجتماعی</label>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q10-2" name="q10" />
+                              <label for="q10-2">حفاظت از حریم زن</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q10-3" name="q10" />
+                              <label for="q10-3">دستور شارع</label>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <input type="radio" id="q10-4" name="q10" />
+                              <label for="q10-4">همه موارد</label>
+                            </div>
+                            <div
+                              class="d-flex justify-content-end align-items-center mt-2 mx-1"
+                            >
+                              <i class="bi bi-caret-right-fill priv-icon"></i>
+                              <button class="btn btn-save-test">
+                                ثبت جواب
+                              </button>
+                              <i class="bi bi-caret-left-fill next-icon"></i>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -672,6 +748,7 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap-v5.3.0/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/timer/jquery.simple.timer.js"></script>
     <script src="../assets/js/app.js"></script>
   </body>
 </html>

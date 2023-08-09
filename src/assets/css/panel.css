@@ -196,3 +196,61 @@
 .table-panel tr td {
     text-align: center;
 }
+
+
+
+.shape-institutes::after {
+    content: " ";
+    width: 18px;
+    height: 15px;
+    background-image: url(../images/miniInstitutes.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+}
+
+.shape-edit-useraccount::after {
+    content: " ";
+    width: 18px;
+    height: 15px;
+    background-image: url(../images/settings.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+}
+
+.shape-library::after {
+    content: " ";
+    width: 15px;
+    height: 16px;
+    background-image: url(../images/library.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+}
+
+.shape-request::after {
+    content: " ";
+    width: 18px;
+    height: 15px;
+    background-image: url(../images/email-icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+}
+
+.shape-exit::after {
+    content: " ";
+    width: 18px;
+    height: 15px;
+    background-image: url(../images/login.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+}
+

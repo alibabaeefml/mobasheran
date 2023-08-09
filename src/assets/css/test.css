@@ -71,6 +71,20 @@ ul li.tab-active li::after{
     rotate: 135deg;
 }
 
+.btn-save-test{
+    border: 1px solid #444;
+    background-color: #fff7e7;
+    color: #00b599;
+    padding: 3px 8px;
+}
+
+.next-icon,
+.priv-icon{
+    color: #666;
+    cursor: pointer;
+    font-size: 17px;
+}
+
 @media (max-width: 1200px) {
     .border-panel {
         margin: 12px ;

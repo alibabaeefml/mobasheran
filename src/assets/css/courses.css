@@ -127,6 +127,11 @@
 
 .img-ostad-c2 img{
     width: 48px;
+    border: 1px solid #ffc148;
+    border-radius: 50%;
+    height: 48px;
+    object-fit: cover;
+    padding: 1px;
 }
 
 .btn-abute {

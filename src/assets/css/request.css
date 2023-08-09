@@ -27,7 +27,7 @@
 }
 
 .head-panel{
-    background-color:#dcd8cd ;
+    background-color:#dcd8ce ;
     padding: 10px 25px 4px 25px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .border-panel form .btn-file{
-    background-color: #fbebca;
+    background-color: #ffefcb;
     width: 80px;
     height: 30px;
     border: 1px solid rgba(111, 111, 111, 0.357);
@@ -63,7 +63,7 @@
 }
 
 .border-panel form button {
-    background-color: #fbebca;
+    background-color: #ffefcb;
     border: 1px solid rgba(111, 111, 111, 0.357);
     margin: 3px 20px;
 }

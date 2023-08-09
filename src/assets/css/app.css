@@ -93,9 +93,7 @@ input:focus {
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media (max-width: 576px) {
-    height: 70px;
-  }
+
 }
 
 #background {
@@ -138,11 +136,11 @@ input:focus {
   backdrop-filter: blur(5px);
 }
 
-.logo-container img {
+/* .logo-container img {
   @media (max-width: 576px) {
     width: 70px;
   }
-}
+} */
 
 .menu-item-icon {
   width: 20px;
@@ -397,9 +395,11 @@ input:focus {
 }
 
 #section3 .asatid img {
+  object-fit: cover;
   width: 200px;
   height: 200px;
   padding: 1px;
+  border-radius: 50%;
 }
 
 #section3 .name-asatid{

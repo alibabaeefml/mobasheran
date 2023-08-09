@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مبشران | صفحه موسسات </title>
+    <title>مبشران | موسسات من</title>
     <link
       rel="shortcut icon"
       href="../assets/images/logo.png"
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../assets/css/app.css" />
     <link rel="stylesheet" href="../assets/css/panel.css" />
     <link rel="stylesheet" href="../assets/css/myInstitutions.css" />
+    <link rel="stylesheet" href="../assets/css/newInstitutions.css" />
   </head>
 
   <body>
@@ -274,12 +275,12 @@
             <i class="bi bi-three-dots-vertical text-secondary"></i>
           </div>
           <div class="row title-link3">
-            <div class="col-4">
-              <a href="allInstitutions.html">
+            <div class="col-4 el-odd">
+              <a href="institutes.html">
                 <div class="d-flex justify-content-center flex-column mx-auto">
                   <img
-                    width="40"
-                    height="40"
+                    width="33"
+                    height="33"
                     src="../assets/images/myInstitutions.png"
                     alt=""
                   />
@@ -288,12 +289,12 @@
               </a>
             </div>
 
-            <div class="col-4 el-odd">
+            <div class="col-4">
               <a href="myInstitutions.html">
                 <div class="d-flex justify-content-center flex-column mx-auto">
                   <img
-                    width="33"
-                    height="33"
+                    width="40"
+                    height="40"
                     src="../assets/images/myInstitutions.png"
                     alt=""
                   />
@@ -303,7 +304,7 @@
             </div>
 
             <div class="col-4 el-odd">
-              <a href="#">
+              <a href="chosenInstitutions.html">
                 <div class="d-flex justify-content-center flex-column mx-auto">
                   <img
                     width="33"
@@ -320,103 +321,128 @@
       </section>
 
       <section>
-        <div class="section-containers containers2">
-          <div class="border-panel rounded-4 text-gray">
-            <div class="d-flex flex-lg-row flex-column-reverse p-5">
-              <div class="d-flex flex-column parts-list-institutes">
-                <div class="part1-list-institutes rounded-3 mb-2 p-3">
-                  <h5 class="fw-bold">موسسات مشابه</h5>
-                  <ul class="pb-5">
-                    <li>موسسه</li>
-                    <li>موسسه</li>
-                    <li>موسسه</li>
-                    <li>موسسه</li>
-                    <li>موسسه</li>
-                  </ul>
-                </div>
-                <div
-                  class="d-flex flex-column rounded-3 part2-list-institutes p-3"
-                >
-                  <h5 class="fw-bold pb-2">ارتباط با موسسه</h5>
-
-                  <h5 class="text-center fw-bold py-4 font-small">
-                    با مسئولین موسسه ی مدارس طرح امین مستقیما در ارتباط باشید.
-                  </h5>
-                  <button
-                    class="btn fw-bold rounded-5 mb-3 text-gray"
-                    style="border: 1px solid rgb(87, 87, 87)"
-                  >
-                    ارتباط با موسسه
-                  </button>
-                </div>
+        <div class="section-containers">
+          <div class="border-panel rounded-4">
+            <div class="head-panel">
+              <div class="d-flex flex-row">
+                <img
+                  class="mx-2 my-1"
+                  width="19"
+                  height="22"
+                  src="../assets/images/page-tik.png"
+                  alt=""
+                />
+                <h5 class="fw-bold my-1">ثبت موسسه جدید</h5>
               </div>
+            </div>
+            <div class="p-4">
+              <form action="" class="flex flex-column">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <div>
+                      <h6>عنوان موسسه:</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>استان :</h6>
+                      <select name="" id="">
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div>
+                      <h6>تاریخ ثبت:</h6>
+                      <input type="text" name="" id="" />
+                    </div>
 
-              <div class="d-flex flex-column">
-                <div>
-                  <img
-                    class="img-bart2-banner rounded-3"
-                    src="../assets/images/banner.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="">
-                  <div
-                    class="d-flex flex-row flex-wrap mt-3 mb-2 justify-content-between"
-                  >
-                    <h5 class="fw-bold text-secondary mx-3">مدارس طرح امین</h5>
-                    <div class="d-flex flex-row">
-                      <span class="px-lg-3"> امتیاز دهید:</span>
+                    <div>
+                      <h6>
+                        شناسه موسسه (حداقل سه کاراکتر شامل حروف انگلیسی و اعداد)
+                      </h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>آدرس موسسه:</h6>
+                      <textarea name="" id="" cols="20" rows="2"></textarea>
+                    </div>
 
-                      <div class="rate position-relative">
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5"></label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4"></label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3"></label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2"></label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1"></label>
+                    <div>
+                      <h6>توضیحات:</h6>
+                      <textarea name="" id="" cols="20" rows="3"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-12">
+                    <div>
+                      <h6>کدملی موسس:</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>شهر :</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>نام موسس:</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>شماره تلفن ثابت مؤسسه به همراه کد شهر :</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div>
+                      <h6>شماره موبایل مؤسسه:</h6>
+                      <input type="text" name="" id="" />
+                    </div>
+
+                    <div
+                      class="d-flex flex-row justify-content-center justify-content-lg-start"
+                    >
+                      <h6 class="mx-1">جغرافیای فعالیت مؤسسه</h6>
+                      <div style="margin: 10px 2px 2px 4px">
+                        <label for="q1" class="mx-1"
+                          >استانی
+                          <input type="radio" id="q1" name="i1" />
+                        </label>
+
+                        <label for="q2" class="mx-1"
+                          >کشوری
+                          <input type="radio" id="q2" name="i1" />
+                        </label>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="text-gray font-small mx-3 d-flex flex-row justify-content-between flex-wrap"
-                  >
-                    <div>
-                      <i></i>
-                      <span> تاریخ تاسیس:</span>
-                      <span></span>
-                    </div>
-                    <div>
-                      <i></i>
-                      <span> محتوی تولیدی:</span>
-                      <span>31</span>
-                    </div>
-                    <div>
-                      <i></i>
-                      <span> دنبال کنندگان:</span>
-                      <span>147</span>
-                      <span>کاربر</span>
-                    </div>
-                  </div>
 
-                  <div
-                    class="rounded-3 w-100 m-2 p-4 d-flex justify-content-end align-items-center"
-                    style="
-                      border: 1px solid rgba(99, 99, 99, 0.344);
-                      height: 65px;
-                    "
-                  >
-                    <button
-                      class="btn bg-secondary text-light fw-bold rounded-2 d-flex"
+                    <div
+                      class="d-flex flex-row justify-content-center justify-content-lg-start"
                     >
-                      دنبال کردن این موسسه +
-                    </button>
+                      <h6 class="mx-1">جنسیت مخاطبین مؤسسه</h6>
+                      <div style="margin: 10px 2px 2px 4px">
+                        <label for="q3" class="mx-1"
+                          >زن
+                          <input type="radio" id="q3" name="i2" />
+                        </label>
+
+                        <label for="q4" class="mx-1"
+                          >مرد
+                          <input type="radio" id="q4" name="i2" />
+                        </label>
+
+                        <label for="q5" class="mx-1"
+                          >هردو
+                          <input type="radio" id="q5" name="i2" />
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-end mx-4"
+                      style="margin-top: 55px"
+                    >
+                      <button class="btn bg-secondary text-light fw-bold">
+                        ارسال درخواست
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>

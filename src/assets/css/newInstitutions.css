@@ -1,0 +1,31 @@
+.section-containers>div {
+    width: 86% !important;
+    overflow-x: auto;
+}
+
+.head-panel{
+background-color: #dcd8ce;
+}
+
+select{
+    height: 42px;
+    width: 300px;
+    background: white;
+    border: 1px #dce3e6 solid;
+    border-radius: 13px;
+}
+
+input[type=text],textarea{
+    width: 300px;
+    border: 1px #dce3e6 solid;
+    border-radius: 13px;
+}
+
+label{
+    font-weight:normal;
+} 
+
+form h6{
+    margin: 12px 0 0 4px;
+
+}

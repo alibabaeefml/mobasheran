@@ -88,48 +88,89 @@ $(document).ready(function() {
     $('.tab').click(function() {
         changeTab(this);
     });
-
-    $(document).keydown(function(e) {
-        if (e.which === 9) {
-            e.preventDefault();
-            var currentTab = $('.tab.active');
-            var nextTab;
-
-            if (e.shiftKey) { 
-                nextTab = currentTab.prev('.tab'); 
-            } else {
-                nextTab = currentTab.next('.tab'); 
-            }
-            if (nextTab.length === 0) {  
-                nextTab = $('.tab:first');
-            }
-            changeTab(nextTab);
-        }
-    });
 });
 
+
+
 //change tab in page test
-    var index=0;
-    $('.bi-caret-left-fill').click(function() {
-        var currentTab=$(".tab-active");
-        var nexTab=currentTab.next('.tab-test')
-        var currentlist=$(".active");
-        var nexlist=currentlist.next('.tabz')
 
+var arryTab = [];
+var tabs = $('.tab-test');
+var contentTabs = $('.content-test');
+var nextIcons = $('.next-icon');
+var privIcons = $('.priv-icon');
 
-        if(nexTab){
-        currentTab.toggleClass( "tab-active" );
-        nexTab.toggleClass( "tab-active" );
+tabs.on('click', function(e) {
+    var resultTab = $(this).data('tab');
+    showContentTab(resultTab);
+    arryTab = resultTab;
+});
 
-        currentlist.removeClass( "active" );
-        nexlist.toggleClass( "active" );
-        currentlist.css( 'display','none' );
-        nexlist.css( 'display','block' );
-        
-    }
-
-
+function showContentTab(resultTab) {
+    contentTabs.each(function() {
+    
+        $(this).addClass('d-none');
+        if (resultTab == $(this).data('tab')) {
+            $(this).removeClass('d-none');
+        }
     });
+}
+
+nextIcons.on('click', function() {
+    arryTab++;
+    if (arryTab > 10) {
+        arryTab = 1;
+    }
+    tabs.removeClass('tab-active');
+    tabs.each(function() {
+        if (arryTab == $(this).data('tab')) {
+            $(this).addClass('tab-active');
+        }
+    });
+    showContentTab(arryTab);
+});
+
+privIcons.on('click', function() {
+    arryTab--;
+    if (arryTab < 1) {
+        arryTab = 10;
+    }
+    tabs.removeClass('tab-active');
+    tabs.each(function() {
+        if (arryTab == $(this).data('tab')) {
+            $(this).addClass('tab-active');
+        }
+    });
+   showContentTab(arryTab);
+});
 
 
 
+//   $('.timer').startTimer();
+
+//   $(document).ready(function(){
+//     $(".scroll-top i").click(function(){
+//       $("body,html").animate({scrollTop: 0},1000);
+//     });
+//   });
+
+//   Fancybox.bind("[data-fancybox]", {});
+  
+
+
+//add icons menu right panel
+const shapes=document.querySelectorAll('.shapes')
+
+shapes.forEach(shape=>{
+    shapes[1].classList.add('shape-institutes')
+    shapes[2].classList.add('shape-library')
+    shapes[3].classList.add('shape-edit-useraccount')
+    shapes[4].classList.add('shape-request')
+    shapes[5].classList.add('shape-exit')
+})
+
+
+// $('.shapes').each(function(shape) {
+//     var shape1=$(".shapes")[1]
+//     shape1.addClass('shape-institutes')
+// })

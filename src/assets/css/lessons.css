@@ -67,6 +67,10 @@
 .teaser .img-ostad>img{
     width: 55px;
     height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ffc148;
+    padding: 1px;
 }
 
 .content-teaser{
